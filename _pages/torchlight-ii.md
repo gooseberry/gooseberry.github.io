@@ -12,11 +12,11 @@ Torchlight II comes with a linux installer which can be installed with the Linux
 
 ## Prerequisites
 
-- Linux (Beta)
-- OpenGL Support
+- [Linux (Beta)](/docs/getting-started/#set-up-linux-beta-on-your-chromebook)
+- [OpenGL Support](/docs/linux-tools/#opengl-support)
 - Chrome Flags
-  - Pointer lock
-  - GPU Support (optional)
+  - [Pointer lock](/docs/chrome-flags/#pointer-lock)
+  - [GPU Support](/docs/chrome-flags/#gpu-support) (optional)
 
 ## Installation Instructions
 
