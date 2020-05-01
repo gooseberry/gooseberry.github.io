@@ -1,6 +1,6 @@
 main:
   - title: "Getting Started"
-    url: /docs/getting-started/
+    url: /docs/linux-beta/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
@@ -9,10 +9,10 @@ main:
     url: /about/
 
 docs:
-  - title: Basic Setup
+  - title: Getting Started
     children:
-      - title: "Getting Started"
-        url: /docs/getting-started/
+      - title: "Linux (Beta)"
+        url: /docs/linux-beta/
       - title: "Chrome Flags"
         url: /docs/chrome-flags/
       - title: "Linux Tools"

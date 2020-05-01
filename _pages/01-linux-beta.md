@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-permalink: /docs/getting-started/
+title: "Linux (Beta) - Crostini"
+permalink: /docs/linux-beta/
 toc: true
 toc_label: " On this page"
 toc_icon: "file-alt"
@@ -17,10 +17,10 @@ Follow the steps below to enable Linux (Beta) on your Chromebook
 3. Under Linux (Beta), select **Turn On**.
 4. Follow the steps on the screen.
 
-Check out the [official Linux (Beta) <i class="fas fa-external-link-alt"></i>](https://support.google.com/chromebook/answer/9145439) support page to learn more about this feature or to get troubleshooting tips if you run into problems.  
+Check out the [official Linux (Beta) <i class="fas fa-external-link-alt"></i>](https://support.google.com/chromebook/answer/9145439) support page to learn more about this feature or to get troubleshooting tips if you run into problems.
 {: .notice--info}
 
-Once Linux (Beta) is installed, a *Terminal* window will appear that lets you type in Linux commands and intall more tools.  An icon, 
+Once Linux (Beta) is installed, a *Terminal* window will appear that lets you type in Linux commands and intall more tools.  An icon,
 <span class="fa-stack fa-1x">
   <i class="fas fa-circle fa-stack-2x"></i>
   <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
