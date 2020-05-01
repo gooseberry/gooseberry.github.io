@@ -20,6 +20,6 @@ docs:
   - title: Games
     children:
       - title: "Darkest Dungeon"
-        url: /games/darkest_dungeon/
+        url: /games/darkest-dungeon/
       - title: "Torchlight II"
         url: /games/torchlight-ii/
