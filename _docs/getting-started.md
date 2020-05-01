@@ -1,6 +1,9 @@
 ---
 title: Getting Started
 permalink: /docs/getting-started/
+toc: true
+toc_lable: "What's in the page"
+toc_icon: "cog"
 ---
 
 Prerequisites to getting your chromebook to install and run games from gog.com.
