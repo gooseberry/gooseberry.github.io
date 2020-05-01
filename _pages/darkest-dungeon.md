@@ -30,10 +30,6 @@ Darkest Dungeon comes with a linux installer which can be installed with the Lin
 **Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
 {: .notice--info}
 
-After completing these steps, a Torchlight icon will appear in the app launcher.
+After completing these steps, a Darkest Dungeon icon will appear in the app launcher.
 
 ## Known Issues
-
-### LAN Play
-
-Linux (Beta) does not have direct access to the network interface.  It is not possible to host a LAN game from your Chromebook as your game will not be visible by other computer, even if you are in the same network.
