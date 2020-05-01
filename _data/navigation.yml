@@ -13,5 +13,11 @@ docs:
     children:
       - title: "Getting Started"
         url: /docs/getting-started/
+      - title: "Chrome Flags"
+        url: /docs/chrome-flags/
       - title: "Linux Tools"
         url: /docs/linux-tools/
+  - title: Games
+    children:
+      - title: "Torchlight II"
+        url: /games/torchlight-ii/
