@@ -1,8 +1,6 @@
 ---
 title: Getting Started
 permalink: /docs/getting-started/
-excerpt: "Getting your chromebook ready to install gog.com games."
-toc: true
 ---
 
 Prerequisites to getting your chromebook to install and run games from gog.com.
