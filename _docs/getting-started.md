@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: "Getting Started"
 permalink: /docs/getting-started/
 toc: true
 toc_lable: "What's in the page"
