@@ -6,6 +6,7 @@ toc_label: " On this page"
 toc_icon: "file-alt"
 ---
 
+[Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/torchlight_ii)
 
 Torchlight II comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.
 
@@ -14,8 +15,8 @@ Torchlight II comes with a linux installer which can be installed with the Linux
 - Linux (Beta)
 - OpenGL Support
 - Chrome Flags
-
-[Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/torchlight_ii)
+  - Pointer lock
+  - GPU Support (optional)
 
 ## Installation Instructions
 
