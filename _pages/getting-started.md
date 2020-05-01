@@ -3,7 +3,7 @@ title: "Getting Started"
 permalink: /docs/getting-started/
 toc: true
 toc_lable: "What's in the page"
-toc_icon: "cog"
+toc_icon: "caret-square-down"
 ---
 
 Linux (Beta), also known as Crostini, is a feature in many Chromebook models that lets you run a Linux container from your Chromebook.  Not all models support this, but it required to get some of the games installed and running. By default this feature is turned off.
@@ -17,9 +17,17 @@ Follow the steps below to enable Linux (Beta) on your Chromebook
 3. Under Linux (Beta), select **Turn On**.
 4. Follow the steps on the screen.
 
-> Check out the [official Linux (Beta) <i class="fas fa-external-link-alt"></i>](https://support.google.com/chromebook/answer/9145439) support page to learn more about this feature.  
+> Check out the [official Linux (Beta) <i class="fas fa-external-link-alt"></i>](https://support.google.com/chromebook/answer/9145439) support page to learn more about this feature or to get troubleshooting tips if you run into problems.  
 
-### Upgrades
+Once Linux (Beta) is installed, a *Terminal* window will appear that lets you type in Linux commands and intall more tools.
+
+<span class="fa-stack fa-2x">
+  <i class="fas fa-circle fa-stack-2x"></i>
+  <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+
+
+### Linux System Upgrades
 
 Keeping the linux system updated requires you to manually run the upgrade commands
 
