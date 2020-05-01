@@ -8,7 +8,7 @@ toc_icon: "file-alt"
 
 Once you have the *Linux (Beta)* feature enabled on your Chromebook, you will need to install some additional tools inside the Linux container before you can install some of the [GOG.com](https://gog.com) games.
 
-##innoextract
+## innoextract
 
 Some games in the [GOG.com](https://gog.com) library are packaged only with the Windows installer.  You will need to install innoextract to unpack the installer and access the game files.  Enter the commands below in the *Terminal* app to install the latest version of innoextract.
 
