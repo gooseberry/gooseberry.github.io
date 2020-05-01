@@ -13,3 +13,5 @@ docs:
     children:
       - title: "Getting Started"
         url: /docs/getting-started/
+      - title: "Linux Tools"
+        url: /docs/linux-tools/
