@@ -6,9 +6,18 @@ toc_label: " On this page"
 toc_icon: "file-alt"
 ---
 
+
 Torchlight II comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.
 
+## Prerequisites
+
+- Linux (Beta)
+- OpenGL Support
+- Chrome Flags
+
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/torchlight_ii)
+
+## Installation Instructions
 
 1. Download the Torchlight II Linux installer.
 2. Move the installer to your *Linux files* folder
@@ -16,3 +25,11 @@ Torchlight II comes with a linux installer which can be installed with the Linux
 4. Run the command `chmod +x gog_torchlight_2_2.0.0.2,sh`
 5. Run the command `./gog_torchlight_2_2.0.0.2.sh`
 6. Follow the on screen instructions
+
+After completing these steps, a Torchlight icon will appear in the app launcher.
+
+## Known Issues
+
+### LAN Play
+
+Linux (Beta) does not have direct access to the network interface.  It is not possible to host a LAN game from your Chromebook as your game will not be visible by other computer, even if you are in the same network.
