@@ -22,3 +22,11 @@ Some games in the [GOG.com](https://gog.com) library are packaged only with the 
 
 Read more about this tool at the [innoextract webpage <i class="fas fa-external-link-alt"></i>](https://constexpr.org/innoextract/)
 {: .notice--info}
+
+## Non-Free Repository
+
+Crostini will only provide applications from the main repository by default.  You need to enable the non-free repository to install some packages necessary for some games to work.  These commands will enable the *non-free* repository
+
+    sudo apt-get update && sudo apt-get install software-properties-common
+    sudo apt-add-repository non-free
+    sudo apt-get update
