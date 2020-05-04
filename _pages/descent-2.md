@@ -43,8 +43,12 @@ This method downloads additional scripts from the web that will run the innoextr
 2. Move the installer to your *Linux files* folder
 3. Open the *Terminal* app
 4. `sudo apt-get install d2x-rebirth`
-5.
+5. Download the descent2 script from github
 
-After completing these steps, a Darkest Dungeon icon will appear in the app launcher.
+After completing these steps, a Descent 2 icon will appear in the app launcher.
 
 ## Known Issues
+
+### CD Music
+
+The GOG installer comes with CD music in a bin/cue format (DESCENT_ii.inst and DESCENT_ii.gog)  These need to be mounted for the application to recognize and play the CD tracks.  A future version of the installer will place these files in the .d2x-rebirth directory and modify the descent.cfg file to play the music automatically.
