@@ -54,9 +54,13 @@ Follow the instructions below to install the descent 2 source port and manually 
 
 7. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
 8. Use bchunk to convert the files into .WAV
+
     bchunk -w descent_ii.gog descent_ii.inst descent_ii
+    
 9. Convert the .wav files to .ogg
+
     oggenc -q 8 *.wav
+
 10. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
 
 **Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
