@@ -30,3 +30,15 @@ Crostini will only provide applications from the main repository by default.  Yo
     sudo apt-get update && sudo apt-get install software-properties-common
     sudo apt-add-repository non-free
     sudo apt-get update
+    
+## bchunk
+
+Tool to convert CD image from bin/cue format to iso
+
+    sudo apt-get update && sudo apt-get install bchunk
+    
+## vorbis-tools
+
+Tools to encode audio files into ogg-vorbis format
+
+    sudo apt-get update && sudo apt-get install vorbis-tools

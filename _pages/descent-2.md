@@ -16,6 +16,8 @@ Descent 2 runs on port of the original game called d2x-rebirth (Part of the [DXX
 - [OpenGL Support](/docs/linux-tools/#opengl-support)
 - [Non-Free Repository](/docs/linux-tools/#non-free-repository)
 - [innoextract](/docs/linux-tools/#innoextract)
+- [bhchunk](/docs/linux-tools/#bchunk) *optional - required to convert CD music*
+- [vorbis-tool](/docs/linux-tools/#vorbis-tools) *optional - required to convert CD music*
 - Chrome Flags
   - [Pointer lock](/docs/chrome-flags/#pointer-lock)
   - [GPU Support](/docs/chrome-flags/#gpu-support) (optional)
@@ -30,7 +32,32 @@ Follow the instructions below to install the descent 2 source port and manually 
 4. `sudo apt-get install d2x-rebirth`
 4. `mkdir tmp_gog && innoextract -d tmp_gog setup_descent_2_1.1_\(16596\).exe`
 5. Copy the following files from tmp_gog/app to the .d2x-rebirth folder in your home directory
+  * DESCENT2.HAM
+  * DESCENT2.HOG
+  * DESCENT2.S11
+  * DESCENT2.S22
+  * DESCENT_II.gog
+  * DESCENT_II.inst
+  * ALIEN1.PIG
+  * ALIEN2.PIG
+  * FIRE.PIG
+  * GROUPA.PIG
+  * ICE.PIG
+  * WATER.PIG
+  * INTRO-H.MVL
+  * OTHER-H.MVL
+  * ROBOTS-H.MVL
 6. Rename all the files in the .d2x-rebirth directory to lowercase.
+
+**Note**: You have done the minimum to launch Descent 2.  The steps below will enable CD music in the game.
+{: .notice--info}
+
+7. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
+8. Use bchunk to convert the files into .WAV
+    bchunk -w descent_ii.gog descent_ii.inst descent_ii
+9. Convert the .wav files to .ogg
+    oggenc -q 8 *.wav
+10. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
 
 **Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
 {: .notice--info}
