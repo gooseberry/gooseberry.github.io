@@ -1,8 +1,27 @@
 ---
 title: "Darkest Dungeon"
 permalink: /games/darkest-dungeon/
+excerpt: "A role-playing video game developed by Red Hook Studios."
 toc: false
+header:
+  teaser: assets/images/darkest-dungeon-screen1-th.png
+gallery:
+  - url: /assets/images/darkest-dungeon-screen1.png
+    image_path: assets/images/darkest-dungeon-screen1-th.png
+    image_alt: "Loading Screen"
+  - url: /assets/images/darkest-dungeon-screen2.png
+    image_path: assets/images/darkest-dungeon-screen2-th.png
+    image_alt: "Main Menu"
+  - url: /assets/images/darkest-dungeon-screen3.png
+    image_path: assets/images/darkest-dungeon-screen3-th.png
+    image_alt: "In-game screenshot"
 ---
+
+*A role playing video game developed by Red Hook Studios.*
+
+## Screenshots
+
+{% include gallery caption="Darkest Dungeon running on an Asus Flip C434 running Chrome 81 with Crostini." %}
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/darkest_dungeon)
 
