@@ -90,6 +90,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
 
+collections:
+  games:
+    output: true
+    permalink: /:collection/:path/
+    
 defaults:
   # _posts
   - scope:
@@ -128,6 +133,20 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
+  # _games
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: single
+      classes: wide
+      read_time: false
+      author_profile: false
+      share: true
+      comments: false
+      sidebar:
+        nav: "docs"
+
 
 category_archive:
   type: liquid
