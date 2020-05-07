@@ -7,13 +7,8 @@ gallery:
   - url: /assets/images/torchlight-ii-screen1.png
     image_path: assets/images/torchlight-ii-screen1-th.png
     image_alt: "Screenshot 1"
-  - url: /assets/images/game-screen2.png
-    image_path: assets/images/game-screen2-th.png
-    image_alt: "Screenshot 2"
-  - url: /assets/images/game-screen3.png
-    image_path: assets/images/game-screen3-th.png
-    image_alt: "Screenshot 3"toc: false
 ---
+
 ## Game information
 
 {% include gallery caption="Screenshots from the game." %}
