@@ -9,8 +9,8 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.19.2">Latest release v4.19.2</a></small>
+  Installing and running GOG.com games on your chromebook<br />
+  <small><a href="https://gog.com">gog.com</a></small>
 feature_row:
   - image_path: 
     alt: "customizable"
