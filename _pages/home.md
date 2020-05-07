@@ -4,35 +4,35 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: 
+  overlay_image:
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+    - label: "<i class='fas fa-gamepad'></i> Get Started"
+      url: "/docs/linux-beta/"
 excerpt: >
-  Installing and running GOG.com games on your chromebook<br />
+  Documentation and tutorials to help you get your GOG games running on your Chromebook.<br />
   <small><a href="https://gog.com">gog.com</a></small>
 feature_row:
-  - image_path: 
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path:
+    alt: "Easy Setup"
+    title: "Easy Setup"
+    excerpt: "Tutorials include all steps you need to get your game running on your hardware."
+    url: "/docs/linux-beta/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: 
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+  - image_path:
+    alt: "Games"
+    title: "Games"
+    excerpt: "A growing collection of games added to the website on a regular basis."
+    url: "/games/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: 
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+  - image_path:
+    alt: "Scripts"
+    title: "Scripts"
+    excerpt: "Access to scripts designed to automate many of the installation process."
+    url: "https://github.com/gooseberry/cgi"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Learn more"
 ---
 
 {% include feature_row %}
