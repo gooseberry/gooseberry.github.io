@@ -1,6 +1,8 @@
 main:
   - title: "Getting Started"
     url: /docs/linux-beta/
+  - title: "Games"
+    url: /games/
   - title: "About"
     url: /about/
 
