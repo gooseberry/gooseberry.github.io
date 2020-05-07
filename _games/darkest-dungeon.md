@@ -1,9 +1,7 @@
 ---
 title: "Darkest Dungeon"
 permalink: /games/darkest-dungeon/
-toc: true
-toc_label: " On this page"
-toc_icon: "file-alt"
+toc: false
 ---
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/darkest_dungeon)

@@ -1,9 +1,7 @@
 ---
 title: "Descent 2"
 permalink: /games/descent-2/
-toc: true
-toc_label: " On this page"
-toc_icon: "file-alt"
+toc: false
 ---
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/descent_2)

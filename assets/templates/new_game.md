@@ -1,6 +1,6 @@
 ---
-title: "Torchlight II"
-permalink: /games/torchlight-ii/
+title: "GAME_NAME"
+permalink: /games/GAME_PATH/
 toc: false
 ---
 
