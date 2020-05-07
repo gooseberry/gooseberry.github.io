@@ -30,7 +30,7 @@ feature_row:
     alt: "Scripts"
     title: "Scripts"
     excerpt: "Access to scripts designed to automate many of the installation process."
-    url: "https://github.com/gooseberry/cgi"
+    url: "https://github.com/gooseberry/cgi/wiki"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---
