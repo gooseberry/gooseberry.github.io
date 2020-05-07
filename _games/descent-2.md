@@ -1,8 +1,27 @@
 ---
 title: "Descent 2"
 permalink: /games/descent-2/
+excerpt: "A first person shooter video game developed by Parallax Software."
 toc: false
+header:
+  teaser: assets/images/descent-2-screen1-th.png
+gallery:
+  - url: /assets/images/descent-2-screen1.png
+    image_path: assets/images/descent-2-screen1-th.png
+    image_alt: "Loading Screen"
+  - url: /assets/images/descent-2-screen2.png
+    image_path: assets/images/descent-2-screen2-th.png
+    image_alt: "Main Menu"
+  - url: /assets/images/descent-2-screen3.png
+    image_path: assets/images/descent-2-screen3-th.png
+    image_alt: "In-game screenshot"
 ---
+
+*A first person shooter developed by Parallax Software.*
+
+## Screenshots
+
+{% include gallery caption="Screenshots from the game." %}
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/descent_2)
 
