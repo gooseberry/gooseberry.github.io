@@ -20,9 +20,9 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path:
-    alt: "Games"
-    title: "Games"
-    excerpt: "A growing collection of games added to the website on a regular basis."
+    alt: "GOG Games"
+    title: "GOG Games"
+    excerpt: "A growing collection of games from GOG's library added to the website on a regular basis."
     url: "/games/"
     btn_class: "btn--primary"
     btn_label: "Learn more"

@@ -1,8 +1,23 @@
 ---
 title: "GAME_NAME"
 permalink: /games/GAME_PATH/
+excerpt: "Short one-line description of the game."
 toc: false
+gallery:
+  - url: /assets/images/game-screen1.png
+    image_path: assets/images/game-screen1-th.png
+    image_alt: "Screenshot 1"
+  - url: /assets/images/game-screen2.png
+    image_path: assets/images/game-screen2-th.png
+    image_alt: "Screenshot 2"
+  - url: /assets/images/game-screen3.png
+    image_path: assets/images/game-screen3-th.png
+    image_alt: "Screenshot 3"
 ---
+
+## Game information
+
+{% include gallery caption="Screenshots from the game." %}
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/torchlight_ii)
 
