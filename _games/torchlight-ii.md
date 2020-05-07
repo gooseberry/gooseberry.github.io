@@ -1,12 +1,18 @@
 ---
 title: "Torchlight II"
 permalink: /games/torchlight-ii/
-excerpt: "Short one-line description of the game."
+excerpt: "An action role-playing dungeon crawler video game developed by Runic Games."
 toc: false
 gallery:
   - url: /assets/images/torchlight-ii-screen1.png
     image_path: assets/images/torchlight-ii-screen1-th.png
-    image_alt: "Screenshot 1"
+    image_alt: "Loading Screen"
+  - url: /assets/images/torchlight-ii-screen2.png
+    image_path: assets/images/torchlight-ii-screen2-th.png
+    image_alt: "Main Menu"
+  - url: /assets/images/torchlight-ii-screen3.png
+    image_path: assets/images/torchlight-ii-screen3-th.png
+    image_alt: "In-game screenshot"
 ---
 
 ## Game information
