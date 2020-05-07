@@ -30,8 +30,8 @@ Follow the instructions below to install the descent 2 source port and manually 
 2. Move the installer to your *Linux files* folder
 3. Open the *Terminal* app
 4. `sudo apt-get install d2x-rebirth`
-4. `mkdir tmp_gog && innoextract -d tmp_gog setup_descent_2_1.1_\(16596\).exe`
-5. Copy the following files from tmp_gog/app to the .d2x-rebirth folder in your home directory
+5. `mkdir tmp_gog && innoextract -d tmp_gog setup_descent_2_1.1_\(16596\).exe`
+6. Copy the following files from tmp_gog/app to the .d2x-rebirth folder in your home directory
   * DESCENT2.HAM
   * DESCENT2.HOG
   * DESCENT2.S11
@@ -47,24 +47,33 @@ Follow the instructions below to install the descent 2 source port and manually 
   * INTRO-H.MVL
   * OTHER-H.MVL
   * ROBOTS-H.MVL
-6. Rename all the files in the .d2x-rebirth directory to lowercase.
-
-**Note**: You have done the minimum to launch Descent 2.  The steps below will enable CD music in the game.
-{: .notice--info}
-
-7. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
-8. Use bchunk to convert the files into .WAV
-
-    bchunk -w descent_ii.gog descent_ii.inst descent_ii
-    
-9. Convert the .wav files to .ogg
-
-    oggenc -q 8 *.wav
-
-10. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
+7. Rename all the files in the .d2x-rebirth directory to lowercase.
 
 **Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
 {: .notice--info}
+
+### Add CD music
+
+The game will run perfectly fine with MIDI music.  Follow these steps if you prefer to listen to the CD music that comes with the game.
+
+1. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
+2. Use bchunk to convert the files into .WAV
+
+    `bchunk -w descent_ii.gog descent_ii.inst descent_ii`
+
+3. Convert the .wav files to .ogg
+
+    `oggenc -q 8 *.wav`
+
+4. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
+
+After completing these steps, a Descent 2 icon will appear in the app launcher.
+
+## Known Issues
+
+### CD Music
+
+The GOG installer comes with CD music in a bin/cue format (DESCENT_ii.inst and DESCENT_ii.gog)  Extra steps have been added to the instructions to convert the CD music and make it available in the game.
 
 ## Alternative Installation
 
@@ -75,11 +84,3 @@ This method downloads additional scripts from the web that will run the innoextr
 3. Open the *Terminal* app
 4. `sudo apt-get install d2x-rebirth`
 5. Download the descent2 script from github
-
-After completing these steps, a Descent 2 icon will appear in the app launcher.
-
-## Known Issues
-
-### CD Music
-
-The GOG installer comes with CD music in a bin/cue format (DESCENT_ii.inst and DESCENT_ii.gog)  These need to be mounted for the application to recognize and play the CD tracks.  A future version of the installer will place these files in the .d2x-rebirth directory and modify the descent.cfg file to play the music automatically.
