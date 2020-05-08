@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image:
+  overlay_image: /assets/images/chromebook.png
   actions:
     - label: "<i class='fas fa-gamepad'></i> Get Started"
       url: "/docs/linux-beta/"
