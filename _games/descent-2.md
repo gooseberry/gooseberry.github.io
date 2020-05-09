@@ -48,13 +48,22 @@ Once you have installed the prerequisites above, you will need to download the g
 ![Descent 2 Download page](/assets/images/descent-2-download.png)
 
 If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
-{: .notice--warn}
+{: .notice--warning}
+
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.  You will need to run a few commands on the terminal to complete the following steps, go ahead and start the terminal.  You can copy and paste the line below into the terminal to install the Descent 2 source port application.
+
+    sudo apt-get update && sudo apt-get install d2x-rebirth -y
+
+**Note**: If you get an error trying to install the source port, go back and make sure you enabled the Non-Free repository.
+{: .notice--info}
+
+Next, you'll want to extract all the game files from the installer.  We create a temporary directory to hold the game files because this makes cleaning up the files we don't need afterwards a lot easier.  Copy the two commands below into the terminal.  The first command creates the temporary directory and the second line extracts the Descent 2 files into the new directory.  Wait for the extraction process to finish.
+
+    mkdir tmp_descent2
+    innoextract -d tmp_descent2 setup_descent_2_*.exe
 
 
-2. Move the installer to your *Linux files* folder
-3. Open the *Terminal* app
-4. `sudo apt-get install d2x-rebirth`
-5. `mkdir tmp_gog && innoextract -d tmp_gog setup_descent_2_1.1_\(16596\).exe`
+
 6. Copy the following files from tmp_gog/app to the .d2x-rebirth folder in your home directory
   * DESCENT2.HAM
   * DESCENT2.HOG
