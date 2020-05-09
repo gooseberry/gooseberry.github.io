@@ -19,15 +19,15 @@ gallery:
 
 *A first person shooter developed by Parallax Software.*
 
-| Store Page                                | Version | System  | Installation Method |
-|-------------------------------------------|---------|---------|---------------------|
-|[Descent 2](https://gog.com/game/descent_2)| 1.1     | Windows | Source Port         |
+| Store Page                                | Version | System  | Installation Method       |
+|-------------------------------------------|---------|---------|---------------------------|
+|[Descent 2](https://gog.com/game/descent_2)| 1.1     | Windows | Source Port (d2x-rebirth) |
 
 ## Screenshots
 
 {% include gallery caption="Screenshots from the game." %}
 
-Descent 2 runs on port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.)
+The instructions on this page will get you running Descent 2 on a source port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
 
 ## Prerequisites
 
