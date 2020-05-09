@@ -93,7 +93,7 @@ The game will run perfectly fine with the included MIDI soundtrack.  If you pref
 
 The first thing you will want to do is to create a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.  These files are a disk image of the original Descent 2 CD.  The Descent 2 source port can't read these files, but you can convert them to a format that the game can play.  Open the terminal application and copy the following lines to convert the CD image tracks to music files.
 
-    cd ~/.d2x-rebirth
+    cd ~/.d2x-rebirth/music
     bhunck -w DESCENT_II.GOG DESCENT_II.INST d2_ost_track_
     rm d2_ost_track_01.iso
     oggenc -q 8 *.wav
@@ -109,13 +109,8 @@ Inside the tmp_descent2/app folder, you will find the game's manual *Manual.pdf*
 
 ## Alternative Installation
 
-This method downloads additional scripts from the web that will run the innoextract tool and place the files in the appropriate folder for you.
-
-1. Download the Descent 2 Windows offline backup game installer.
-2. Move the installer to your *Linux files* folder
-3. Open the *Terminal* app
-4. `sudo apt-get install d2x-rebirth`
-5. Download the descent2 script from github
+This method downloads additional scripts from the web that will run the innoextract tool and place the files in the appropriate folder for you. The script hasn't been completed yet.  This page will be updated with instructions once the script is ready.
+{: .notice--info}
 
 ## Running the Game
 
