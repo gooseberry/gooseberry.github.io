@@ -19,9 +19,9 @@ gallery:
 
 *A first person shooter developed by Parallax Software.*
 
-| Store Page | Version | System | Installation |
-|------------|---------|--------|--------------|
-|[Descent 2](https://gog.com/game/descent_2)| 1.1 | Windows | Source Port |
+| Store Page                                | Version | System  | Installation Method |
+|-------------------------------------------|---------|---------|---------------------|
+|[Descent 2](https://gog.com/game/descent_2)| 1.1     | Windows | Source Port         |
 
 ## Screenshots
 
@@ -62,15 +62,17 @@ Next, you'll want to extract all the game files from the installer.  We create a
     mkdir tmp_descent2
     innoextract -d tmp_descent2 setup_descent_2_*.exe
 
+With the d2x-rebirth source port installed and the game files extracted, you need to copy the game files into the d2x-rebirth configuration directory before you can start playing Descent 2.  You'll need to *Show hidden files* in the options at the top right corner of *Files* app on your Chromebook to see the .d2x-rebirth folder in your linux files
 
+![Show Hidden Files](/assets/images/show-hidden-files.png)
 
-6. Copy the following files from tmp_gog/app to the .d2x-rebirth folder in your home directory
+In the **Linux files**, copy the following files from tmp_descent2/app to the .d2x-rebirth folder.  You also need to change all the files to lowercase since the source port will not recognize the files if they are in upppercase. 
   * DESCENT2.HAM
   * DESCENT2.HOG
   * DESCENT2.S11
   * DESCENT2.S22
-  * DESCENT_II.gog
-  * DESCENT_II.inst
+  * DESCENT_II.GOG
+  * DESCENT_II.INST
   * ALIEN1.PIG
   * ALIEN2.PIG
   * FIRE.PIG
@@ -80,14 +82,12 @@ Next, you'll want to extract all the game files from the installer.  We create a
   * INTRO-H.MVL
   * OTHER-H.MVL
   * ROBOTS-H.MVL
-7. Rename all the files in the .d2x-rebirth directory to lowercase.
 
-**Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
-{: .notice--info}
+If you completed all the steps above correctly, you should see a *Descent 2* icon in your Chromebook application launcher inside the *Linux app* group.  You can start Descent 2 by clicking on this icon.  You can delete the Descent 2 windows installer and the tmp_descent2 folder from your Linux files as these are no longer needed.
 
 ### Add CD music
 
-The game will run perfectly fine with MIDI music.  Follow these steps if you prefer to listen to the CD music that comes with the game.
+The game will run perfectly fine with the included MIDI soundtrack.  If you prefer to listen to the original CD music soundtrack that comes with the game however, follow the steps below.
 
 1. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
 2. Use bchunk to convert the files into .WAV
@@ -101,8 +101,6 @@ The game will run perfectly fine with MIDI music.  Follow these steps if you pre
 4. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
 
 After completing these steps, a Descent 2 icon will appear in the app launcher.
-
-## Post-Install Cleanup
 
 ## Known Issues
 
