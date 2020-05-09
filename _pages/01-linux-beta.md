@@ -10,13 +10,10 @@ Good Old Chromebook is written to help you get games from your GOG.com library u
 
 Most of the instructions from this website will have you installing your games via Crostini to the Linux virtual container.  
 
-## Crostini
-
-Linux (Beta), also known as Crostini, is a feature in many Chromebook models that lets you run a Linux container from your Chromebook.  Not all models support this, but it required to get some of the games installed and running. If your Chromebook supports Linux applications, you should see a *Linux (Beta)* option in the settings.
 
 ### Set up Linux (Beta) on your Chromebook
 
-Follow the steps below to enable Linux (Beta) on your Chromebook
+Linux (Beta), also known as Crostini, is a feature in many Chromebook models that lets you run a Linux container from your Chromebook.  Not all models support this, but it required to get some of the games installed and running. If your Chromebook supports Linux applications, you should see a *Linux (Beta)* option in the settings.  Follow the steps below to enable Linux (Beta) on your Chromebook
 
 1. At the bottom right, select the time.
 2. Select settings <i class="fas fa-cog"></i>
