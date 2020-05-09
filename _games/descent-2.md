@@ -83,30 +83,29 @@ In the **Linux files**, copy the following files from tmp_descent2/app to the .d
   * OTHER-H.MVL
   * ROBOTS-H.MVL
 
-If you completed all the steps above correctly, you should see a *Descent 2* icon in your Chromebook application launcher inside the *Linux app* group.  You can start Descent 2 by clicking on this icon.  You can delete the Descent 2 windows installer and the tmp_descent2 folder from your Linux files as these are no longer needed.
+If you completed all the steps above correctly, your .d2x-rebirth folder should look like the screenshot below.
 
-### Add CD music
+![Contents of .d2x-rebirth directory](/assets/images/contents-d2x-rebirth.png) 
 
-The game will run perfectly fine with the included MIDI soundtrack.  If you prefer to listen to the original CD music soundtrack that comes with the game however, follow the steps below.
+### Descent 2 Original Soundtrack *(Optional)*
 
-1. Make a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.
-2. Use bchunk to convert the files into .WAV
+The game will run perfectly fine with the included MIDI soundtrack.  If you prefer to listen to the original CD music soundtrack that comes with the game however, there are a few extra steps to get this working.
 
-    `bchunk -w descent_ii.gog descent_ii.inst descent_ii`
+The first thing you will want to do is to create a directory called music in the .d2x-rebirth folder and move the files *descent_ii.gog* and *descent_ii.inst* to this directory.  These files are a disk image of the original Descent 2 CD.  The Descent 2 source port can't read these files, but you can convert them to a format that the game can play.  Open the terminal application and copy the following lines to convert the CD image tracks to music files.
 
-3. Convert the .wav files to .ogg
+    cd ~/.d2x-rebirth
+    bhunck -w DESCENT_II.GOG DESCENT_II.INST d2_ost_track_
+    rm d2_ost_track_01.iso
+    oggenc -q 8 *.wav
+    rm d2_ost_track*.wav
 
-    `oggenc -q 8 *.wav`
+You can switch to CD music from the game's main menu under **Options..** and **Sound effects & music...**  Set *jukebox* as the music type.  Finally, select **Path for level music (Browse...)** to open a file selection box.  Select the *music* folder, then select the **<This directory>** option.
 
-4. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
+Additionally, you can set specific tracks from the soundtrack for the *Main Menu*, *Briefing*, *Credits*, *Escape Sequence*, and *Game Ending*.
 
-After completing these steps, a Descent 2 icon will appear in the app launcher.
+## Post-Install Clean up
 
-## Known Issues
-
-### CD Music
-
-The GOG installer comes with CD music in a bin/cue format (DESCENT_ii.inst and DESCENT_ii.gog)  Extra steps have been added to the instructions to convert the CD music and make it available in the game.
+Inside the tmp_descent2/app folder, you will find the game's manual *Manual.pdf* and a keyboard reference card *RefCard.pdf* with all the in-game keyboard shortcuts.  Copy those files if you want to keep them.  You can delete the Descent 2 windows installer and the tmp_descent2 folder from your Linux files as these are no longer needed.
 
 ## Alternative Installation
 
@@ -117,3 +116,7 @@ This method downloads additional scripts from the web that will run the innoextr
 3. Open the *Terminal* app
 4. `sudo apt-get install d2x-rebirth`
 5. Download the descent2 script from github
+
+## Running the Game
+
+Once the installation is complete.  You can start the game by clicking on the Descent 2 icon from the Chrome OS Application Launcher.  The icon will be located in a group labelled *Linux apps*
