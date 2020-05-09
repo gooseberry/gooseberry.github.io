@@ -19,11 +19,13 @@ gallery:
 
 *A first person shooter developed by Parallax Software.*
 
+| Store Page | Version | System | Installation |
+|------------|---------|--------|--------------|
+|[Descent 2](https://gog.com/game/descent_2)| 1.1 | Windows | Source Port |
+
 ## Screenshots
 
 {% include gallery caption="Screenshots from the game." %}
-
-[Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/descent_2)
 
 Descent 2 runs on port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.)
 
@@ -41,9 +43,14 @@ Descent 2 runs on port of the original game called d2x-rebirth (Part of the [DXX
 
 ## Installation Instructions
 
-Follow the instructions below to install the descent 2 source port and manually copy the files to the .d2x-rebirth directory.  There is an alternative installation method further below that uses scripts to automate the file transfers.  Feel free to use that method as well.
+Once you have installed the prerequisites above, you will need to download the game installer from the GOG.com website.  Select Descent 2 from your library, make sure you have **Windows** selected as the system and download the offline backup game installer.
 
-1. Download the Descent 2 Windows offline backup game installer.
+![Descent 2 Download page](/assets/images/descent-2-download.png)
+
+If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
+{: .notice--warn}
+
+
 2. Move the installer to your *Linux files* folder
 3. Open the *Terminal* app
 4. `sudo apt-get install d2x-rebirth`
@@ -85,6 +92,8 @@ The game will run perfectly fine with MIDI music.  Follow these steps if you pre
 4. Start Descent 2 from tha application launcher.  Under the config option, change music to *jukebox* select the music folder for level music.
 
 After completing these steps, a Descent 2 icon will appear in the app launcher.
+
+## Post-Install Cleanup
 
 ## Known Issues
 
