@@ -91,7 +91,7 @@ Next, you need to create a *desktop* file with the details on how to launch the 
     Icon=/home/<your-username>/.local/share/icons/quake.png
     Exec="quakespasm"
     Categories=Game;
-    Path=/usr/games/quakespasm
+    Path=/usr/games
 
 **Important**: Replace *<your-username>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
 {: .notice--warning}  
