@@ -10,9 +10,12 @@ Some of the advanced or experimental features of Linux (Beta) are disabled by de
 
 ## Pointer lock
 
-Allow Linux applications to request a pointer lock, i.e. exclusive user of the mount pointer.
+Allow Linux applications to request a pointer lock, i.e. exclusive user of the mount pointer.  There are two flags here and both should be enabled for best results.
 
 `chrome://flags/#exo-pointer-lock` ***Enabled***
+
+`chrome://flags/#enable-pointer-lock-options` ***Enabled***
+
 
 ## GPU Support
 
