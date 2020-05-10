@@ -73,6 +73,31 @@ Under the .quakespasm folder in your *Linux files*, create a folder and call it 
 
 ### Quake Original Soundtrack *(Optional)*
 
+You can play Quake and it's expansion packs without music.  If you want to get the original soundtrack running while you play, there are a few extra steps to get this working.
+
+First, you will need to create a *music* folder in each of the game folders where you copied the PAK files.  You can manually create these with the files app or copy the line below and paste it into the Terminal.
+
+    mkdir ~/.quakespasm/id1/music ~/.quakespasm/hipnotic/music ~/.quakespasm/rogue/music
+
+The Quake soundtracks are packaged with the game as CD images.  The Quake source port can't read these image files, but you can convert them to a format the game can play.   Open the terminal application and copy the following lines to convert the music.
+
+    bchunk -w ~/tmp_quake/app/game.gog ~/tmp_quake/app/game.cue ~/.quakespasm/id1/music/track_
+    rm ~/.quakespasm/id1/music/track_01.iso
+    cd ~/.quakespasm/id1/music
+    oggenc -q 8 *.wav
+    rm *.wav
+    bchunk -w ~/tmp_quake/app/gamea.gog ~/tmp_quake/app/gamea.cue ~/.quakespasm/hipnotic/music/track_
+    rm ~/.quakespasm/hipnotic/music/track_01.iso
+    cd ~/.quakespasm/hipnotic/music
+    oggenc -q 8 *.wav
+    rm *.wav
+    bchunk -w ~/tmp_quake/app/gamed.gog ~/tmp_quake/app/gamed.cue ~/.quakespasm/rogue/music/track_
+    rm ~/.quakespasm/rogue/music/track_01.iso
+    cd ~/.quakespasm/rogue/music
+    oggenc -q 8 *.wav
+    rm *.wav
+    
+
 ## Application Launcher Icon
 
 Now that you have all the game files in the right places, you will need to create application launcher icons in your Chromebook to launch the game.
