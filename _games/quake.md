@@ -77,7 +77,7 @@ Now that you have all the game files in the right places, you will need to creat
 
 Right-click the images belown and click *Save image as...*  Save the image in your *Linux files* under *.config/share/icons/*  If the icons folder doesn't exist, you can right-click in the *share* folder to bring up the context menu and create a *New Folder*.
 
-![Quake Icon](/assets/images/quake.png) ![Scourge of Armagedon Icon](/assets/images/quake-scourge-of-armagedon.png) ![Dissolution of Eternity Icon](/assets/images/quake-dissolution-of-eternity.png) 
+![Quake Icon](/assets/images/quake.png)
 
 Next, you need to create a *desktop* file with the details on how to launch the game.  To do this, open the **txt** app on your Chromebook and enter the following lines.
 
@@ -94,9 +94,44 @@ Next, you need to create a *desktop* file with the details on how to launch the 
     Path=/usr/games
 
 **Important**: Replace *\<your-username\>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
-{: .notice--warning}  
+{: .notice--warning}
 
 After changing the Icon line, click *Save as...* to save the file in your *Linux files* under *.local/share/application/quake.desktop*  You might have to *Show hidden files* to see the .local folder.
+
+### Expansion packs Launcher *(Optional)*
+
+Additionaly, you can use the same process to create a Chromebook Launcher Icon for the two expansion packs (Scourge of Armagedon and Dissolution of Eternity).  Save the two images below in your *Linux files* under *.config/share/icons/*
+
+![Scourge of Armagedon Icon](/assets/images/quake-scourge-of-armagedon.png) ![Dissolution of Eternity Icon](/assets/images/quake-dissolution-of-eternity.png)
+
+Then, create a desktop file **quake-soa.desktop** and copy the following lines into the file, again paying attention to put your username in the Icon path.
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Value=1.0
+    Type=Application
+    Name=Quake SoA
+    GenericName=Quake Scourge of Armagedon
+    Comment=Quake Mission Pack 1
+    Icon=/home/<your-username>/.local/share/icons/quake-scourge-of-armagedon.png
+    Exec=quakespasm -game hipnotic
+    Categories=Game;
+    Path=/usr/games
+
+Finally, create a third desktop file **quake-doe.desktop** with the following content.  As with the other two files, make sure to replace the username in the file.
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Value=1.0
+    Type=Application
+    Name=Quake DoE
+    GenericName=Quake Dissolution of Eternity
+    Comment=Quake Mission Pack 2
+    Icon=/home/<your-username>/.local/share/icons/quake-dissolution-of-eternity.png
+    Exec=quakespasm -game rogue
+    Categories=Game;
+    Path=/usr/games
+
 
 ## Post-Install Clean Up
 
