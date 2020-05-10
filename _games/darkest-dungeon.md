@@ -19,13 +19,17 @@ gallery:
 
 *A role playing video game developed by Red Hook Studios.*
 
+| Store Page                                              | Version | System | Installation Method |
+|---------------------------------------------------------|---------|--------|---------------------|
+| [Darkest Dungeon](https://gog.com/game/darkest_dungeon) | 24839   | Linux  | Native Linux        |
+
 ## Screenshots
 
-{% include gallery caption="Darkest Dungeon running on an Asus Flip C434 running Chrome 81 with Crostini." %}
+{% include gallery caption="Screenshots from Darkest Dungeon on an Asus Flip C434 running Chrome 81 with Crostini." %}
 
 [Store Page <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/darkest_dungeon)
 
-Darkest Dungeon comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.
+Darkest Dungeon comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.  This is the easiest method to install the game.
 
 ## Prerequisites
 
@@ -37,16 +41,19 @@ Darkest Dungeon comes with a linux installer which can be installed with the Lin
 
 ## Installation Instructions
 
-1. Download the Darkest Dungeon Linux installer.
-2. Move the installer to your *Linux files* folder
-3. Open the *Terminal* app
-4. Run the command `chmod +x darkest_dungeon_24839_28859.sh`
-5. Run the command `./darkest_dungeon_24839_28859.sh`
-6. Follow the on screen instructions
+Once you have installed the prerequisites above, you will need to download the game installer from the GOG.com website. Select Darkest Dungeon from your library, make sure you have Linux selected as the system and download the offline backup game installer.
 
-**Note**: The file name of the installer may not be identical, the commands must be modified if the filename does not match.
-{: .notice--info}
+![Darkest Dungeon Download Page](/assets/images/darkest-dungeon-download.png)
 
-After completing these steps, a Darkest Dungeon icon will appear in the app launcher.
+After the game installer is downloaded, move it into the Linux Files folder so that you can access the file from the terminal. Copy the commands below and paste it into your terminal to start the Darkest Dungeon installer. Follow the on screen instructions and wait for the installation to finish.
 
-## Known Issues
+    chmod +x darkest_dungeon_*.sh
+    ./darkest_dungeon_*.sh
+
+## Post-Install Clean up
+
+You can delete the Darkest Dungeon installer from your Chromebook. The file isn’t need to play the game.
+
+## Running the Game
+
+Once the installation is complete. You can start the game by clicking on the Darkest Dungeon icon from the Chrome OS Application Launcher. The icon will be located in a group labelled Linux apps

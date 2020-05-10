@@ -25,7 +25,7 @@ gallery:
 
 ## Screenshots
 
-{% include gallery caption="Screenshots from the game." %}
+{% include gallery caption="Torchlight II screenshots from an ASUS Flip C434 running Chrome OS 81 with Crostini." %}
 
 Torchlight II comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.  This is the easiest method to install the game.
 
