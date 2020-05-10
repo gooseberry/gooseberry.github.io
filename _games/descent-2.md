@@ -99,7 +99,7 @@ The first thing you will want to do is to create a directory called music in the
     oggenc -q 8 *.wav
     rm d2_ost_track*.wav
 
-You can switch to CD music from the game's main menu under **Options..** and **Sound effects & music...**  Set *jukebox* as the music type.  Finally, select **Path for level music (Browse...)** to open a file selection box.  Select the *music* folder, then select the **<This directory>** option.
+You can switch to CD music from the game's main menu under **Options..** and **Sound effects & music...**  Set *jukebox* as the music type.  Finally, select **Path for level music (Browse...)** to open a file selection box.  Select the *music* folder, then select the **\<This directory\>** option.
 
 Additionally, you can set specific tracks from the soundtrack for the *Main Menu*, *Briefing*, *Credits*, *Escape Sequence*, and *Game Ending*.
 
