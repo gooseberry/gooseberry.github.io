@@ -75,7 +75,7 @@ Under the .quakespasm folder in your *Linux files*, create a folder and call it 
 
 Now that you have all the game files in the right places, you will need to create application launcher icons in your Chromebook to launch the game.
 
-Right-click the image belown and click *Save image as...*  Save the image in your *Linux files* under *.config/share/icons/quake.png.*  If the icons folder doesn't exist, you can right-click in the *share* folder to bring up the context menu and create a *New Folder*.
+Right-click the images belown and click *Save image as...*  Save the image in your *Linux files* under *.config/share/icons/*  If the icons folder doesn't exist, you can right-click in the *share* folder to bring up the context menu and create a *New Folder*.
 
 ![Quake Icon](/assets/images/quake.png) ![Scourge of Armagedon Icon](/assets/images/quake-scourge-of-armagedon.png) ![Dissolution of Eternity Icon](/assets/images/quake-dissolution-of-eternity.png) 
 
@@ -93,7 +93,7 @@ Next, you need to create a *desktop* file with the details on how to launch the 
     Categories=Game;
     Path=/usr/games
 
-**Important**: Replace *<your-username>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
+**Important**: Replace *\<your-username\>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
 {: .notice--warning}  
 
 After changing the Icon line, click *Save as...* to save the file in your *Linux files* under *.local/share/application/quake.desktop*  You might have to *Show hidden files* to see the .local folder.
