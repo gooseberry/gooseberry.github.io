@@ -61,13 +61,42 @@ In the Linux files, copy the following files from tmp_quake/app/id1 to the .quak
   * PAK1.PAK
 
 
-### Mission Pack 1: Scourge of Armagon
+#### Mission Pack 1: Scourge of Armagon
 
+Under the .quakespasm folder in your *Linux files*, create a folder and call it hipnotic.  Copy the pak0.pak from tmp_quake/app/hipnotic to the .quakespasm/hipnotic folder.  This file should be in lowercase.  If not, you will need to rename it.
 
-### Mission Pack 2: Dissolutions of Eternity
+#### Mission Pack 2: Dissolutions of Eternity
 
+Under the .quakespasm folder in your *Linux files*, create a folder and call it rogue.  Copy the pak0.pak from tmp_quake/app/rogue to the .quakespasm/rogue folder.  This file should be in lowercase.  If not, you will need to rename it.
 
 ### Quake Original Soundtrack *(Optional)*
+
+## Application Launcher Icon
+
+Now that you have all the game files in the right places, you will need to create application launcher icons in your Chromebook to launch the game.
+
+Right-click the image belown and click *Save image as...*  Save the image in your *Linux files* under *.config/share/icons/quake.png.*  If the icons folder doesn't exist, you can right-click in the *share* folder to bring up the context menu and create a *New Folder*.
+
+![Quake Icon](/assets/images/quake.png) 
+
+Next, you need to create a *desktop* file with the details on how to launch the game.  To do this, open the **txt** app on your Chromebook and enter the following lines.
+
+    [Desktop Entry]
+    Encoding=UTF-8
+    Value=1.0
+    Type=Application
+    Name=Quake
+    GenericName=Quake
+    Comment=QuakeSpasm
+    Icon=/home/<your-username>/.local/share/icons/quake.png
+    Exec="quakespasm"
+    Categories=Game;
+    Path=/usr/games/quakespasm
+
+**Important**: Replace *<your-username>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
+{: .notice--warning}  
+
+After changing the Icon line, click *Save as...* to save the file in your *Linux files* under *.local/share/application/quake.desktop*  You might have to *Show hidden files* to see the .local folder.
 
 ## Post-Install Clean Up
 
@@ -75,3 +104,8 @@ In the Linux files, copy the following files from tmp_quake/app/id1 to the .quak
 
 ## Known Issues
 
+### Mouse Lock
+
+The mouse will not properly lock to the game screen.  When this happens, the mouse cursor won't move past the edge of the Chromebook screen and it will limit your range of movement within the game.  There is a workaround to solve this problem that you will need to repeat each time to play the game.
+
+Firstly, you can't apply this workaround while quake is in fullscreen mode, but you can go back to fullscreen after you get the mouse lock.  From the game menu, turn off the fullscreen in the video options and apply changes.  While the menu is still up, hover the mouse anywhere over the quake screen and click the mouse button once.  The mouse pointer will then be locked to the Quake game and you will be able to use the mouse without hitting the edge of the screen.
