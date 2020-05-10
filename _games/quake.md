@@ -13,6 +13,12 @@ gallery:
   - url: /assets/images/quake-screen3.png
     image_path: assets/images/quake-screen3-th.png
     image_alt: "Screenshot 3"
+  - url: /assets/images/quake-screen4.png
+    image_path: assets/images/quake-screen4-th.png
+    image_alt: "Screenshot 4"
+  - url: /assets/images/quake-screen5.png
+    image_path: assets/images/quake-screen5-th.png
+    image_alt: "Screenshot 5"
 ---
 
 *A first-person shooter video game developed by id Software*
