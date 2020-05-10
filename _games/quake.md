@@ -81,18 +81,18 @@ First, you will need to create a *music* folder in each of the game folders wher
 
 The Quake soundtracks are packaged with the game as CD images.  The Quake source port can't read these image files, but you can convert them to a format the game can play.   Open the terminal application and copy the following lines to convert the music.
 
-    bchunk -w ~/tmp_quake/app/game.gog ~/tmp_quake/app/game.cue ~/.quakespasm/id1/music/track_
-    rm ~/.quakespasm/id1/music/track_01.iso
+    bchunk -w ~/tmp_quake/app/game.gog ~/tmp_quake/app/game.cue ~/.quakespasm/id1/music/track
+    rm ~/.quakespasm/id1/music/track01.iso
     cd ~/.quakespasm/id1/music
     oggenc -q 8 *.wav
     rm *.wav
-    bchunk -w ~/tmp_quake/app/gamea.gog ~/tmp_quake/app/gamea.cue ~/.quakespasm/hipnotic/music/track_
-    rm ~/.quakespasm/hipnotic/music/track_01.iso
+    bchunk -w ~/tmp_quake/app/gamea.gog ~/tmp_quake/app/gamea.cue ~/.quakespasm/hipnotic/music/track
+    rm ~/.quakespasm/hipnotic/music/track01.iso
     cd ~/.quakespasm/hipnotic/music
     oggenc -q 8 *.wav
     rm *.wav
-    bchunk -w ~/tmp_quake/app/gamed.gog ~/tmp_quake/app/gamed.cue ~/.quakespasm/rogue/music/track_
-    rm ~/.quakespasm/rogue/music/track_01.iso
+    bchunk -w ~/tmp_quake/app/gamed.gog ~/tmp_quake/app/gamed.cue ~/.quakespasm/rogue/music/track
+    rm ~/.quakespasm/rogue/music/track01.iso
     cd ~/.quakespasm/rogue/music
     oggenc -q 8 *.wav
     rm *.wav
