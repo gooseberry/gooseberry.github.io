@@ -129,7 +129,7 @@ After changing the Icon line, click *Save as...* to save the file in your *Linux
 
 Additionaly, you can use the same process to create a Chromebook Launcher Icon for the two expansion packs (Scourge of Armagedon and Dissolution of Eternity).  Save the two images below in your *Linux files* under *.config/share/icons/*
 
-![Scourge of Armagedon Icon](/assets/images/quake-scourge-of-armagedon.png) ![Dissolution of Eternity Icon](/assets/images/quake-dissolution-of-eternity.png)
+![Scourge of Armagedon Icon](/assets/images/quake-soa.png) ![Dissolution of Eternity Icon](/assets/images/quake-doe.png)
 
 Then, create a desktop file **quake-soa.desktop** and copy the following lines into the file, again paying attention to put your username in the Icon path.
 
