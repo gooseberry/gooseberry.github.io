@@ -1,20 +1,10 @@
 ---
-title: "Linux Tools"
-permalink: /docs/linux-tools/
-toc: true
+title: "InnoExtract"
+permalink: /docs/innoextract/
+toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---
-
-Once you have the *Linux (Beta)* feature enabled on your Chromebook, you will need to install some additional tools inside the Linux container before you can install some of the [GOG.com](https://gog.com) games.  Check the prerequisites of the games you want to play before you start installing the tools below.
-
-## OpenGL Support
-
-OpenGL support on Crostini is provided through a tool called Mesa.  You will need this tool to run any game that requires OpenGL. To install OpenGl support, you need to install the mesa-utils package.  Copy the line below into the terminal and wait for the installation to finish.
-
-    sudo apt-get update && sudo apt-get install mesa-utils -y
-
-## innoextract
 
 Some games in the [GOG.com](https://gog.com) library are packaged only with the Windows installer.  You will need to install innoextract to unpack the installer and access the game files.  
 
@@ -24,6 +14,8 @@ Some games in the [GOG.com](https://gog.com) library are packaged only with the 
 
 Read more about this tool at the [innoextract webpage <i class="fas fa-external-link-alt"></i>](https://constexpr.org/innoextract/)
 {: .notice--info}
+
+While it is possible to install the innoextract package directly from the debian repository, it is out of date and you will run into problems while trying to extract newer gog.com installers.
 
 ## bchunk
 

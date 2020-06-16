@@ -11,8 +11,12 @@ docs:
     children:
       - title: "Linux (Beta)"
         url: /docs/linux-beta/
-      - title: "Chrome Flags"
-        url: /docs/chrome-flags/
+      - title: "Pointer Lock"
+        url: /docs/pointer-lock/
+      - title: "GPU Support"
+        url: /docs/gpu-support/
+      - title: "InnoExtract"
+        url: /docs/innoextract/
       - title: "Linux Tools"
         url: /docs/linux-tools/
       - title: "Troubleshooting"

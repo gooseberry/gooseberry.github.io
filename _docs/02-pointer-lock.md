@@ -1,14 +1,10 @@
 ---
-title: "Chrome Flags"
-permalink: /docs/chrome-flags/
-toc: true
+title: "Pointer Lock"
+permalink: /docs/pointer-lock/
+toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---
-
-Some of the advanced or experimental features of Linux (Beta) are disabled by default.  These can be activated by setting the approriate flag in chrome.  Copy the flag location to a chrome address bar to find and set the appropriate flag.
-
-## Pointer lock
 
 Allow Linux applications to request a pointer lock, i.e. exclusive user of the mount pointer.  There are two flags here and both should be enabled for best results.
 
