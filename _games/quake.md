@@ -40,8 +40,7 @@ After Linux (Beta) is installed and the appropriate Chrome Flags have been set, 
 
     sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
 
-You'll also need to download and install InnoExtract.
-{: include /_docs/04-innoextract.md}
+You'll also need to download and install [InnoExtract](/docs/innoextract).
 
 Still in the terminal application, copy the line below to download the [quake-installer script](https://github.com/gooseberry/cgi/blob/master/scripts/quake_install.sh)
 
