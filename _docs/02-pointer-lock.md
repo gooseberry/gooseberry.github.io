@@ -12,12 +12,3 @@ Allow Linux applications to request a pointer lock, i.e. exclusive user of the m
 
 `chrome://flags/#enable-pointer-lock-options` ***Enabled***
 
-
-## GPU Support
-
-Enable Crostini GPU Support.
-
-`chrome://flags/#crostini-gpu-support` ***Enabled***
-
-**Note**: To access GPU support from Crostini, you need to install the mesa-utils package.  You can verify that GPU support work by running the command `glxinfo -B | grep virgl` - if this command does not return any value, GPU support is not working.
-{: .notice--info}
