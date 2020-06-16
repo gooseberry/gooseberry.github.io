@@ -32,11 +32,18 @@ The instructions on this page will get you running Quake on a source port of the
 ## Prerequisites
 
 - [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
-- [OpenGL Support](/docs/linux-tools/#opengl-support)
-- [innoextract](/docs/linux-tools/#innoextract)
 - Chrome Flags
-  - [Pointer lock](/docs/chrome-flags/#pointer-lock)
-  - [GPU Support](/docs/chrome-flags/#gpu-support) (optional)
+  - [Pointer lock](/docs/pointer-lock)
+  - [GPU Support](/docs/gpu-support)
+
+After Linux (Beta) is installed and the appropriate Chrome Flags have been set, open the terminal application from the Chrome application launcher and copy the following command.
+
+    sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
+
+You'll also need to download and install InnoExtract.
+{: include 04-innoextract.md}
+
+Still in the terminal application, copy the line below to download the [quake-installer script](https://github.com/gooseberry/cgi/blob/master/scripts/quake_install.sh)
 
 ## Installation Instructions
 
