@@ -18,24 +18,3 @@ Read more about this tool at the [innoextract webpage <i class="fas fa-external-
 
 While it is possible to install the innoextract package directly from the debian repository, it is out of date and you will run into problems while trying to extract newer gog.com installers.
 
-## bchunk
-
-bchunk converts CD images from bin/cue format to iso.  GOG.com includes the original soundtrack for some games in the form of a bin/cue CD image inside the game installer.  You will need bchunk to extract the audio tracks from the CD image for some games to get the original music working. Copy the line below into the terminal to install the bchunk application.  
-
-    sudo apt-get update && sudo apt-get install bchunk -y
-    
-## vorbis-tools
-
-If you extracted the audio files from a CD image into wave files, you may need to covert the audio files into a forma that Linux can play back easily.  The vorbis-tools is a collection of tools that can convert and compress these files into ogg-vorbis format (similar to mp3) that will play in your game.`
-
-    sudo apt-get update && sudo apt-get install vorbis-tools -y
-
-## Non-Free Repository
-
-
-Crostini installs and updates programs from a collection of applications called a repository.  By default, only the main reposisiroty is enabled and you will need to enable the non-free repository to install some packages required for some games.  These commands will enable the *non-free* repository
-
-    sudo apt-get update && sudo apt-get install software-properties-common -y
-    sudo apt-add-repository non-free
-    sudo apt-get update
-    
