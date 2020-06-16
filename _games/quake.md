@@ -31,19 +31,13 @@ The instructions on this page will get you running Quake on a source port of the
 
 ## Prerequisites
 
-- [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
-- Chrome Flags
-  - [Pointer lock](/docs/pointer-lock)
-  - [GPU Support](/docs/gpu-support)
-
-After Linux (Beta) is installed and the appropriate Chrome Flags have been set, open the terminal application from the Chrome application launcher and copy the following command.
+- Setup [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
+- Enable the [Pointer lock](/docs/pointer-lock) Chrome Flags
+- Enable and activate [GPU Support](/docs/gpu-support)
+- Download and install [InnoExtract](/docs/innoextract)
+- Copy the following lines into the Terminal App
 
     sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
-
-You'll also need to download and install [InnoExtract](/docs/innoextract).
-
-Still in the terminal application, copy the line below to download the [quake-installer script](https://github.com/gooseberry/cgi/blob/master/scripts/quake_install.sh)
-
     wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/quake_install.sh
     chmod +x quake_install.sh
 
@@ -53,125 +47,17 @@ Once you have installed the prerequisites above, you will need to download the g
 
 ![Quake Download page](/assets/images/quake-download.png)
 
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal. You will need to run a few commands on the terminal to complete the following steps, go ahead and start the terminal. You can copy and paste the line below into the terminal to install the Quake source port application.
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal. It should be in the same folder as the *quake_install.sh* file.
 
-    sudo apt-get update && sudo apt-get install quakespasm -y
+![Quake installer files](/assets/images/quake-files.png)
 
-Next, you’ll want to extract all the game files from the installer. We create a temporary directory to hold the game files because this makes cleaning up the files we don’t need afterwards a lot easier. Copy the two commands below into the terminal. The first command creates the temporary directory and the second line extracts the Quake files into the new directory. Wait for the extraction process to finish.
+To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
 
-    mkdir tmp_quake
-    innoextract -d tmp_quake setup_quake_the_offering_*.exe
-
-With the quakespasm source port installed and the game files extracted, you need to copy the game files into the quakespasm configuration directory before you can start playing Quake. You’ll need to Show hidden files in the options at the top right corner of Files app on your Chromebook to see the .quakespasm folder in your linux files
-
-![Show hidden files](/assets/images/show-hidden-files.png)
-
-In the Linux files, copy the following files from tmp_quake/app/id1 to the .quakespasm/id1 folder. You also need to change all the files to lowercase since the source port will not recognize the files if they are in upppercase.
-
-  * PAK0.PAK
-  * PAK1.PAK
-
-
-#### Mission Pack 1: Scourge of Armagon
-
-Under the .quakespasm folder in your *Linux files*, create a folder and call it hipnotic.  Copy the pak0.pak from tmp_quake/app/hipnotic to the .quakespasm/hipnotic folder.  This file should be in lowercase.  If not, you will need to rename it.
-
-#### Mission Pack 2: Dissolutions of Eternity
-
-Under the .quakespasm folder in your *Linux files*, create a folder and call it rogue.  Copy the pak0.pak from tmp_quake/app/rogue to the .quakespasm/rogue folder.  This file should be in lowercase.  If not, you will need to rename it.
-
-### Quake Original Soundtrack *(Optional)*
-
-You can play Quake and it's expansion packs without music.  If you want to get the original soundtrack running while you play, there are a few extra steps to get this working.
-
-First, you will need to create a *music* folder in each of the game folders where you copied the PAK files.  You can manually create these with the files app or copy the line below and paste it into the Terminal.
-
-    mkdir ~/.quakespasm/id1/music ~/.quakespasm/hipnotic/music ~/.quakespasm/rogue/music
-
-The Quake soundtracks are packaged with the game as CD images.  The Quake source port can't read these image files, but you can convert them to a format the game can play.   Open the terminal application and copy the following lines to convert the music.
-
-    bchunk -w ~/tmp_quake/app/game.gog ~/tmp_quake/app/game.cue ~/.quakespasm/id1/music/track
-    rm ~/.quakespasm/id1/music/track01.iso
-    cd ~/.quakespasm/id1/music
-    oggenc -q 8 *.wav
-    rm *.wav
-    bchunk -w ~/tmp_quake/app/gamea.gog ~/tmp_quake/app/gamea.cue ~/.quakespasm/hipnotic/music/track
-    rm ~/.quakespasm/hipnotic/music/track01.iso
-    cd ~/.quakespasm/hipnotic/music
-    oggenc -q 8 *.wav
-    rm *.wav
-    bchunk -w ~/tmp_quake/app/gamed.gog ~/tmp_quake/app/gamed.cue ~/.quakespasm/rogue/music/track
-    rm ~/.quakespasm/rogue/music/track01.iso
-    cd ~/.quakespasm/rogue/music
-    oggenc -q 8 *.wav
-    rm *.wav
-    
-
-## Application Launcher Icon
-
-Now that you have all the game files in the right places, you will need to create application launcher icons in your Chromebook to launch the game.
-
-Right-click the images belown and click *Save image as...*  Save the image in your *Linux files* under *.config/share/icons/*  If the icons folder doesn't exist, you can right-click in the *share* folder to bring up the context menu and create a *New Folder*.
-
-![Quake Icon](/assets/images/quake.png)
-
-Next, you need to create a *desktop* file with the details on how to launch the game.  To do this, open the **txt** app on your Chromebook and enter the following lines.
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Value=1.0
-    Type=Application
-    Name=Quake
-    GenericName=Quake
-    Comment=QuakeSpasm
-    Icon=/home/<your-username>/.local/share/icons/quake.png
-    Exec=quakespasm
-    Categories=Game;
-    Path=/usr/games
-
-**Important**: Replace *\<your-username\>* with your assigned username in Terminal.  You can find your username by running the command `whoami` in the terminal.
-{: .notice--warning}
-
-After changing the Icon line, click *Save as...* to save the file in your *Linux files* under *.local/share/application/quake.desktop*  You might have to *Show hidden files* to see the .local folder.
-
-### Expansion packs Launcher *(Optional)*
-
-Additionaly, you can use the same process to create a Chromebook Launcher Icon for the two expansion packs (Scourge of Armagedon and Dissolution of Eternity).  Save the two images below in your *Linux files* under *.config/share/icons/*
-
-![Scourge of Armagedon Icon](/assets/images/quake-soa.png) ![Dissolution of Eternity Icon](/assets/images/quake-doe.png)
-
-Then, create a desktop file **quake-soa.desktop** and copy the following lines into the file, again paying attention to put your username in the Icon path.
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Value=1.0
-    Type=Application
-    Name=Quake SoA
-    GenericName=Quake Scourge of Armagedon
-    Comment=Quake Mission Pack 1
-    Icon=/home/<your-username>/.local/share/icons/quake-scourge-of-armagedon.png
-    Exec=quakespasm -game hipnotic
-    Categories=Game;
-    Path=/usr/games
-
-Finally, create a third desktop file **quake-doe.desktop** with the following content.  As with the other two files, make sure to replace the username in the file.
-
-    [Desktop Entry]
-    Encoding=UTF-8
-    Value=1.0
-    Type=Application
-    Name=Quake DoE
-    GenericName=Quake Dissolution of Eternity
-    Comment=Quake Mission Pack 2
-    Icon=/home/<your-username>/.local/share/icons/quake-dissolution-of-eternity.png
-    Exec=quakespasm -game rogue
-    Categories=Game;
-    Path=/usr/games
-
-
-## Post-Install Clean Up
+    ./quake_install.sh setup_quake_the_offering_2.0.0.6.exe
 
 ## Running the Game
+
+The installation script creates application icons in the Chrome Launcher.  You can find a shortcut for Quake, and both the map packs under the *Linux apps* folder in the Launcher.
 
 ## Known Issues
 
