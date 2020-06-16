@@ -1,7 +1,7 @@
 ---
 title: "Linux (Beta) - Crostini"
 permalink: /docs/linux-beta/
-toc: true
+toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
 permalink: /docs/troubleshooting/
-toc: true
+toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---

@@ -17,8 +17,6 @@ docs:
         url: /docs/gpu-support/
       - title: "InnoExtract"
         url: /docs/innoextract/
-      - title: "Linux Tools"
-        url: /docs/linux-tools/
       - title: "Troubleshooting"
         url: /docs/troubleshooting/
   - title: Games
