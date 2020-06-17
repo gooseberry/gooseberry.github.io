@@ -37,9 +37,11 @@ The instructions on this page will get you running Descent 2 on a source port of
 - Download and install [InnoExtract](/docs/innoextract)
 - Copy the following lines into the Terminal App
 
-        sudo apt-get update && sudo apt-get install software-properties-common -y
+        sudo apt-get update && sudo apt-get install bchunk mesa-utils software-properties-common vorbis-tools -y
+        
         sudo apt-add-repository non-free
-        sudo apt-get update && sudo apt-get install bchunk d2x-rebirth mesa-utils vorbis-tools -y
+        sudo apt-get update && sudo apt-get install d2x-rebirth -y
+        
         wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/descent2_installer.sh
         chmod +x descent2_installer.sh
 
