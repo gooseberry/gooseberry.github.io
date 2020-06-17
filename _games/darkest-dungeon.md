@@ -33,11 +33,9 @@ Darkest Dungeon comes with a linux installer which can be installed with the Lin
 
 ## Prerequisites
 
-- [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
-- [OpenGL Support](/docs/linux-tools/#opengl-support)
-- Chrome Flags
-  - [Pointer lock](/docs/chrome-flags/#pointer-lock)
-  - [GPU Support](/docs/chrome-flags/#gpu-support) (optional)
+- Setup [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
+- Enable [Pointer lock](/docs/pointer-lock)
+- Enable and activate [GPU Support](/docs/gpu-support)
 
 ## Installation Instructions
 
