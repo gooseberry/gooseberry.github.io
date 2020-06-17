@@ -54,6 +54,8 @@ If you click on the *Download and Install now* link, it will download the galaxy
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.  It should be in the same folder as the *descent2_installer.sh* file
 
+![Descent 2 installer files](/assets/images/descent-2-files.png)
+
 To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
 
     ./descent2_installer.sh setup_descent_2_1.1_\(16596\).exe
