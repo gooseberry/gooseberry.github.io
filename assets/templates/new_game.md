@@ -27,11 +27,10 @@ Insert a brief description of the installation method
 
 ## Prerequisites
 
-- [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
-- [OpenGL Support](/docs/linux-tools/#opengl-support)
+- Setup [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
+- Enable [Pointer lock](/docs/pointer-lock)
+- Enable and activate [GPU Support](/docs/gpu-support)
 - Chrome Flags
-  - [Pointer lock](/docs/chrome-flags/#pointer-lock)
-  - [GPU Support](/docs/chrome-flags/#gpu-support) (optional)
 
 ## Installation Instructions
 
