@@ -37,12 +37,11 @@ The instructions on this page will get you running Descent 2 on a source port of
 - Download and install [InnoExtract](/docs/innoextract)
 - Copy the following lines into the Terminal App
 
-
-    sudo apt-get update && sudo apt-get install software-properties-common -y
-    sudo apt-add-repository non-free
-    sudo apt-get update && sudo apt-get install bchunk d2x-rebirth mesa-utils vorbis-tools -y
-    wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/descent2_installer.sh
-    chmod +x descent2_installer.sh
+        sudo apt-get update && sudo apt-get install software-properties-common -y
+        sudo apt-add-repository non-free
+        sudo apt-get update && sudo apt-get install bchunk d2x-rebirth mesa-utils vorbis-tools -y
+        wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/descent2_installer.sh
+        chmod +x descent2_installer.sh
 
 ## Installation Instructions
 
@@ -57,7 +56,7 @@ After the game installer is downloaded, move it into the **Linux Files** folder 
 
 To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
 
-
+    ./descent2_installer.sh setup_descent_2_1.1_\(16596\).exe
 
 ## Running the Game
 
