@@ -35,11 +35,11 @@ The instructions on this page will get you running Quake on a source port of the
 - Enable the [Pointer lock](/docs/pointer-lock) Chrome Flags
 - Enable and activate [GPU Support](/docs/gpu-support)
 - Download and install [InnoExtract](/docs/innoextract)
-- Copy the following lines into the Terminal App
+- Install the required packages
 
-        sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
-        wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/quake_install.sh
-        chmod +x quake_install.sh
+      sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
+
+       
 
 
 ## Installation Instructions
@@ -47,6 +47,11 @@ The instructions on this page will get you running Quake on a source port of the
 Once you have installed the prerequisites above, you will need to download the game installer from the GOG.com website. Select Quake from your library and download the offline backup game installer.
 
 ![Quake Download page](/assets/images/quake-download.png)
+
+Copy the lines below into the Terminal App to download the latest version of the Quake Installer script.
+
+    wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/quake_install.sh
+    chmod +x quake_install.sh
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal. It should be in the same folder as the *quake_install.sh* file.
 
@@ -59,6 +64,10 @@ To install the game, run this command from the Terminal App.  The installation s
 ## Running the Game
 
 The installation script creates application icons in the Chrome Launcher.  You can find a shortcut for Quake, and both the map packs under the *Linux apps* folder in the Launcher.
+
+## Post Insall Clean-up
+
+The script will delete all temporary folders it creates during the installation process.  You can delete both the script and the Quake GOG installer from your Linux files as these are not need to run the game.
 
 ## Known Issues
 
