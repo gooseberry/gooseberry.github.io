@@ -35,15 +35,15 @@ The instructions on this page will get you running Descent 2 on a source port of
 - Enable the [Pointer lock](/docs/pointer-lock) Chrome Flags
 - Enable and activate [GPU Support](/docs/gpu-support)
 - Download and install [InnoExtract](/docs/innoextract)
-- Copy the following lines into the Terminal App
+- Install the required packages
 
         sudo apt-get update && sudo apt-get install bchunk mesa-utils software-properties-common vorbis-tools -y
+
+- Enable the non-free respository and install the d2x-rebirth package
         
         sudo apt-add-repository non-free
         sudo apt-get update && sudo apt-get install d2x-rebirth -y
         
-        wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/descent2_installer.sh
-        chmod +x descent2_installer.sh
 
 ## Installation Instructions
 
@@ -53,6 +53,11 @@ Once you have installed the prerequisites above, you will need to download the g
 
 If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
 {: .notice--warning}
+
+Copy the lines below into the Terminal App to download the latest version of the Descent 2 Installer script.
+
+    wget https://raw.githubusercontent.com/gooseberry/cgi/master/scripts/descent2_installer.sh
+    chmod +x descent2_installer.sh
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.  It should be in the same folder as the *descent2_installer.sh* file
 
@@ -65,6 +70,10 @@ To install the game, run this command from the Terminal App.  The installation s
 ## Running the Game
 
 Once the installation is complete.  You can start the game by clicking on the Descent 2 icon from the Chrome OS Application Launcher.  The icon will be located in a group labelled *Linux apps*
+
+## Post Install Clean-up
+
+The script will delete all temporary folders it creates during the installation process. You can delete both the script and the Descent GOG installer from your Linux files as these are not need to run the game.
 
 ## Known Issues
 
