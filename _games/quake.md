@@ -76,3 +76,11 @@ The script will delete all temporary folders it creates during the installation 
 The mouse will not properly lock to the game screen.  When this happens, the mouse cursor won't move past the edge of the Chromebook screen and it will limit your range of movement within the game.  There is a workaround to solve this problem that you will need to repeat each time to play the game.
 
 Firstly, you can't apply this workaround while quake is in fullscreen mode, but you can go back to fullscreen after you get the mouse lock.  From the game menu, turn off the fullscreen in the video options and apply changes.  While the menu is still up, hover the mouse anywhere over the quake screen and click the mouse button once.  The mouse pointer will then be locked to the Quake game and you will be able to use the mouse without hitting the edge of the screen.
+
+### No Sound
+
+If you do not hear any sound while playing the game, you can usually fix this problem by closing all your linux applications and shutting down the Linux (Beta) system.  Simply, right-click on the terminal app and select *Shut down Linux (Beta)* from the context menu.  Once the shut down process is finished, you should be able to run the game with sound.
+
+### Black Screen
+
+The game may on occasion show only a black screen.  You might run into this problem the first time you run the game after the initial installation.  You can usually fix this problem by closing all your linux applications and shutting down the Linux (Beta) system.  See the instructions in the *No Sound* section of this guide for more details.
