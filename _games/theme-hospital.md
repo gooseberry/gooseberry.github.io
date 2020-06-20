@@ -1,7 +1,7 @@
 ---
 title: "Theme Hospital"
 permalink: /games/theme-hospital/
-excerpt: "A hospital business simulation game developped by Bullfrog Productions and published by Electronic Arts."
+excerpt: "A hospital business simulation game developped by Bullfrog Productions."
 toc: false
 header:
   teaser: assets/images/theme-hospital-screen1-th.png
@@ -17,7 +17,7 @@ gallery:
     image_alt: "Screenshot 3"
 ---
 
-*A hospital business simulation game developped by Bullfrog Productions and published by Electronic Arts.*
+*A hospital business simulation game developped by Bullfrog Productions.*
 
 | Store Page                                              | Version | System          | Installation Method                        |
 |---------------------------------------------------------|---------|-----------------|--------------------------------------------|
