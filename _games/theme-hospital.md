@@ -17,7 +17,7 @@ gallery:
     image_alt: "Screenshot 3"
 ---
 
-*A hospital business simulation game developped by Bullfrog Productions and published by Electronic Arts."
+*A hospital business simulation game developped by Bullfrog Productions and published by Electronic Arts.*
 
 | Store Page                                              | Version | System          | Installation Method                        |
 |---------------------------------------------------------|---------|-----------------|--------------------------------------------|
