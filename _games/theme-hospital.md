@@ -17,6 +17,8 @@ gallery:
     image_alt: "Screenshot 3"
 ---
 
+*A hospital business simulation game developped by Bullfrog Productions and published by Electronic Arts."
+
 | Store Page                                              | Version | System          | Installation Method                        |
 |---------------------------------------------------------|---------|-----------------|--------------------------------------------|
 |[Theme Hospital](https://www.gog.com/game/theme_hospital)| v3      | Windows         | Source Port (CorsixTH)                     |
