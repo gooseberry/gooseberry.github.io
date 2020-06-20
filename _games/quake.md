@@ -37,9 +37,7 @@ The instructions on this page will get you running Quake on a source port of the
 - Download and install [InnoExtract](/docs/innoextract)
 - Install the required packages
 
-      sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
-
-       
+    sudo apt-get update && sudo apt-get install bchunk mesa-utils quakespasm vorbis-tools -y
 
 
 ## Installation Instructions

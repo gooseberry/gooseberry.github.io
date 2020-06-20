@@ -39,8 +39,8 @@ The instructions on this page will get you running Theme Hospital on a source po
 
 - Enable the contrib respository and install the corsix-th package
         
-        sudo apt-add-repository contrib
-        sudo apt-get update && sudo apt-get install corsix-th -y
+      sudo apt-add-repository contrib
+      sudo apt-get update && sudo apt-get install corsix-th -y
 
 ## Installation Instructions
 
