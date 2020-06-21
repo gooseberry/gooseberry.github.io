@@ -61,6 +61,10 @@ After the game installer is downloaded, move it into the Linux Files folder so t
 
 ![Theme Hospital Files](/assets/images/theme-hospital-files.png)
 
+To install the game, run this command from the Terminal App. The installation script will take a few minutes to complete.
+
+    ./theme_hospital_installer.sh setup_theme_hospital_v3_\(28027\).exe
+
 ## Post-Install Clean Up
 
 After the installer is finished, you can delete the installer script and the setup file from your computer as they are not required to play the game.
