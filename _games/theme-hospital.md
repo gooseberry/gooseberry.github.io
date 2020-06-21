@@ -33,7 +33,6 @@ The instructions on this page will get you running Theme Hospital on a source po
 
 - Setup [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
 - Enable [Pointer lock](/docs/pointer-lock)
-- Enable and activate [GPU Support](/docs/gpu-support)
 - Download and install [InnoExtract](/docs/innoextract)
 - Install the required packages
 
@@ -72,4 +71,5 @@ Once the installation is complete. You can start the game by clicking on the Cor
 
 ## Known Issues
 
+Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
 

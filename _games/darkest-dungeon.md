@@ -55,3 +55,7 @@ You can delete the Darkest Dungeon installer from your Chromebook. The file isnâ
 ## Running the Game
 
 Once the installation is complete. You can start the game by clicking on the Darkest Dungeon icon from the Chrome OS Application Launcher. The icon will be located in a group labelled Linux apps
+
+## Known Issues
+
+Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.

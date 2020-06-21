@@ -58,6 +58,5 @@ Once the installation is complete. You can start the game by clicking on the Tor
 
 ## Known Issues
 
-### LAN Play
+Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
 
-Linux (Beta) does not have direct access to the network interface.  It is not possible to host a LAN game from your Chromebook as your game will not be visible by other computer, even if you are in the same network.

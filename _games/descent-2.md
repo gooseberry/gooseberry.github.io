@@ -77,6 +77,8 @@ The script will delete all temporary folders it creates during the installation 
 
 ## Known Issues
 
+Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
+
 ### CD Music
 
 You can switch to CD music from the game's main menu under **Options..** and **Sound effects & music...**  Set *jukebox* as the music type.  Finally, select **Path for level music (Browse...)** to open a file selection box.  Select the *music* folder, then select the **\<This directory\>** option.
