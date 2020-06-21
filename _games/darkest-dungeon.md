@@ -58,4 +58,4 @@ Once the installation is complete. You can start the game by clicking on the Dar
 
 ## Known Issues
 
-Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
+Check the [Troubleshooting](/docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.

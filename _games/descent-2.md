@@ -77,7 +77,7 @@ The script will delete all temporary folders it creates during the installation 
 
 ## Known Issues
 
-Check the [Troubleshooting](docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
+Check the [Troubleshooting](/docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
 
 ### CD Music
 
