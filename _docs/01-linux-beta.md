@@ -34,4 +34,4 @@ Now that you have the Linux (Beta) feature enabled and you have the black screen
 You should run this command on a regular basis.  This is how Crostini gets it updates, including security patches, from the internet.
 {: .notice--info}
 
-Now that you have an updated Crostini container running, check out the [Linux Tools](/docs/linux-tools) page for additional applications you can install.
+Now that you have an updated Crostini container running, keep reading this guide to get some of your favourite GOG.com games running on your Chromebook.
