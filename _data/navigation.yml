@@ -27,6 +27,8 @@ docs:
         url: /games/descent-2/
       - title: "Quake"
         url: /games/quake/
+      - title: "Quake II"
+        url: /games/quake-ii/
       - title: "Theme Hospital"
         url: /games/theme-hospital/
       - title: "Torchlight II"
