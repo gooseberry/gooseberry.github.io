@@ -44,14 +44,14 @@ Once you have installed the prerequisites above, you will need to download the g
 If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
 {: .notice--warning}
 
-Copy the lines below into the Terminal App to download the latest version of the Descent 2 Installer script.
+Copy the lines below into the Terminal App to download the latest version of the X-COM:UFO Defense Installer script.
 
     wget https://github.com/gooseberry/cgi/raw/master/scripts/xcom-installer.sh
     chmod +x xcom_installer.sh
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.  It should be in the same folder as the *xcom_installer.sh* file
 
-![Descent 2 installer files](/assets/images/xcom-files.png)
+![X-COM:UFO Defense installer files](/assets/images/xcom-files.png)
 
 To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
 
