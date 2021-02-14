@@ -25,7 +25,7 @@ gallery:
 
 ## Screenshots
 
-{% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 81 with Crostini." %}
+{% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 88 with Crostini." %}
 
 The instructions on this page will get you running X-COM:UFO Defense on a source port of the original game called [openxcom <i class="fas fa-external-link-alt"></i>](https://openxcom.org/).  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
 
