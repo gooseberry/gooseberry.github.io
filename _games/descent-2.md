@@ -19,15 +19,46 @@ gallery:
 
 *A first person shooter developed by Parallax Software.*
 
+{% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 81 with Crostini." %}
+
+## Game Details
+
+<table>
+  <tr>
+    <th>Store Page</th>
+    <td>[Descent 2 <i class]"fas fa-external-link-alt"></i>(https://gog.com/game/descent_2)</td>
+  </tr>
+  <tr>
+    <th>Setup File</th>
+    <td>setup_descent_2_1.1_(16596).exe</td>
+  </tr>
+  <tr>
+    <th>Installer Type</th>
+    <td>Inno Setup</td>
+  </tr>
+  <tr>
+    <th>Game Engine</th>
+    <td>[d2x-rebirth <i class="fas fa-external-link-alt"></i>(https://www.dxx-rebirth.com)
+  </tr>
+</table>
+
+Store Page
+: [Descent 2 <i class]"fas fa-external-link-alt"></i>(https://gog.com/game/descent_2)
+
+Setup File
+: setup_descent_2_1.1_(16596).exe
+
+Installer Type
+: Inno Setup (Windows)
+
+Game Engine
+: [d2x-rebirth <i class="fas fa-external-link-alt"></i>(https://www.dxx-rebirth.com) (Open-Source port of original engine)
+
+The instructions on this page will get you running Descent 2 on a source port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
+
 | Store Page                                | Version | System  | Installation Method       |
 |-------------------------------------------|---------|---------|---------------------------|
 |[Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2)| 1.1     | Windows | Source Port (d2x-rebirth) |
-
-## Screenshots
-
-{% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 81 with Crostini." %}
-
-The instructions on this page will get you running Descent 2 on a source port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
 
 ## Installation Instructions
 
