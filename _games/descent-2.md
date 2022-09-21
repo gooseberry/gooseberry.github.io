@@ -23,25 +23,6 @@ gallery:
 
 ## Game Details
 
-<table>
-  <tr>
-    <th>Store Page</th>
-    <td>[Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2)</td>
-  </tr>
-  <tr>
-    <th>Setup File</th>
-    <td>setup_descent_2_1.1_(16596).exe</td>
-  </tr>
-  <tr>
-    <th>Installer Type</th>
-    <td>Inno Setup</td>
-  </tr>
-  <tr>
-    <th>Game Engine</th>
-    <td>[d2x-rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com)
-  </tr>
-</table>
-
 Store Page
 : [Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2)
 
