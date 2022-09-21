@@ -13,3 +13,19 @@ docs:
         url: /docs/getting-started/
       - title: "How it works"
         url: /docs/how-it-works/
+  - title: Games
+    children:
+      - title: "Descent 2"
+        url: /games/descent-2/
+      - title: "Indiana Jones and the Fate of Atlantis"
+        url: /games/indiana-jones-and-the-fate-of-atlantis/
+      - title: "Quake"
+        url: /games/quake/
+      - title: "Quake II"
+        url: /games/quake-ii/
+      - title: "Sam and Max: Hit the Road"
+        url: /games/sam-and-max-hit-the-road/
+      - title: "Theme Hospital"
+        url: /games/theme-hospital/
+      - title: "X-COM UFO Defense"
+        url: /games/xcom-ufo-defense/
