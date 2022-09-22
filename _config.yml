@@ -120,7 +120,7 @@ defaults:
       type: docs
     values:
       layout: single
-      clases: wide
+      classes: wide
       read_time: false
       author_profile: false
       show_date: false
