@@ -24,13 +24,8 @@ The project sets up an Ansible control node within the Linux Environment of a Ch
 
 # Getting Started
 
----
-<dl>
-  <dt>ℹ️ INFO</dt>
-  <dd><i>Follow the instructions in this section to get your system up and running.  Keep reading below the instructions, you will find the details what each step in this guide does.</i></dd>
-</dl>
-
----
+**INFO:** Follow the instructions in this section to get your system up and running.  Keep reading below the instructions, you will find the details what each step in this guide does.
+{: .notice--info}
 
 ## Part One: Set Chrome flags
 1. Open the Chrome browser.
@@ -48,10 +43,8 @@ The project sets up an Ansible control node within the Linux Environment of a Ch
 1. Next to Linux development environment, Click on Turn On.
 1. Follow the steps on the screen.
 
-<dl>
-  <dt>💡 QUICK TIP</dt>
-  <dd><i>The default space setting for LDE is 10G.  You may need more hard drive space if you intend to install many games.</i></dd>
-</dl>
+**QUICK TIP:** The default space setting for LDE is 10G.  You may need more hard drive space if you intend to install many games.
+{: .notice--success}
 
 ## Part Three: Installing Ansible and cloning Smoke
 Once LDE is fully deployed, you will be presented with a terminal screen.  From this screen, paste the following lines to complete the installation of the Smoke tools.
