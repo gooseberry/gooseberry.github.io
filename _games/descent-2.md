@@ -37,7 +37,7 @@ gallery:
 
 ![Descent 2 Download page](/assets/images/descent-2-download.png)
 
-If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
+If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this file.
 {: .notice--warning}
 
 ### Move the installer to Linux Files
