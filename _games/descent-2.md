@@ -27,10 +27,10 @@ Store Page
 : [Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2)
 
 Setup File
-: setup_descent_2_1.1_(16596).exe
+: setup\_descent\_2\_1.1\_\(16596\).exe
 
 Installer Type
-: Inno Setup (Windows)
+: Inno Setup \(Windows\)
 
 Game Engine
 : [d2x-rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com) (Open-Source port of original engine)
