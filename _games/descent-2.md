@@ -27,21 +27,26 @@ gallery:
 |:--|:--|:--|:--|
 | [Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2) | setup\_descent\_2\_1.1\_\(16596\).exe | Inno Setup |[d2x-rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com) (Open-Source port) |
 
-The instructions on this page will get you running Descent 2 on a source port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
-
-
 ## Installation Instructions
 
-You will need to download the game installer from the GOG.com website.  Select Descent 2 from your library, make sure you have **Windows** selected as the system and download the offline backup game installer.
+### Download the game
+
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Descent 2*.
+2. Next to the **System** option, select **Windows**.
+3. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.
 
 ![Descent 2 Download page](/assets/images/descent-2-download.png)
 
 If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this installer.
 {: .notice--warning}
 
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.  It should be in the same folder as the *descent2_installer.sh* file
+### Move the installer to Linux Files
+
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
 ![Descent 2 installer files](/assets/images/descent-2-files.png)
+
+### Run the Ansible playbook
 
 To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
 
