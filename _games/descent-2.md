@@ -23,17 +23,9 @@ gallery:
 
 ## Game Details
 
-Store Page
-: [Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2)
-
-Setup File
-: setup\_descent\_2\_1.1\_\(16596\).exe
-
-Installer Type
-: Inno Setup \(Windows\)
-
-Game Engine
-: [d2x-rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com) (Open-Source port of original engine)
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+| [Descent 2 <i class="fas fa-external-link-alt"></i>](https://gog.com/game/descent_2) | setup\_descent\_2\_1.1\_\(16596\).exe | Inno Setup \(Windows\) |[d2x-rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com) (Open-Source port of original engine) |
 
 The instructions on this page will get you running Descent 2 on a source port of the original game called d2x-rebirth (Part of the [DXX-Rebirth <i class="fas fa-external-link-alt"></i>](https://www.dxx-rebirth.com/) project.  While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
 
