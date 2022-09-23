@@ -1,15 +1,14 @@
 ---
 title: "Adding a new game"
 permalink: /docs/how-it-works/adding-game/
-class: none
-toc: true
+toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---
 
 How do I create an installer for a game?
 
-Note: The guide on this page walks you through the process of creating an installer for [The Dig <i class="fas fa-external-link-alt></i>](https://www.gog.com/game/the_dig) using the [ScummVM <i class="fas fa-external-link-alt></i>](https://scummvm.org).
+Note: The guide on this page walks you through the process of creating an installer for [The Dig <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/the_dig) using the [ScummVM <i class="fas fa-external-link-alt"></i>](https://scummvm.org).
 {: .notice--info}
 
 # Information collection
