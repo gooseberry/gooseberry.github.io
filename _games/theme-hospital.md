@@ -19,33 +19,42 @@ gallery:
 
 *A hospital business simulation game developped by Bullfrog Productions.*
 
-| Store Page                                              | Version | System          | Installation Method                        |
-|---------------------------------------------------------|---------|-----------------|--------------------------------------------|
-|[Theme Hospital](https://www.gog.com/game/theme_hospital)| v3      | Windows         | Source Port (CorsixTH)                     |
-
-## Screenshots
-
 {% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 85 with Crostini." %}
 
-The instructions on this page will get you running Theme Hospital on a source port of the original game called CorsixTH. You can find out more about this source port by visiting the [CorsixTH webpage](https://corsixth.com/).. While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
+# Game Details
 
-## Installation Instructions
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+|[Theme Hospital](https://www.gog.com/game/theme_hospital)| setup_theme_hospital_v3_(28027).exe | Inno Setup | [CorsixTH <i class="fas fa-external-link-alt"></i>](https://corsixth.com/) (Open-Source) |
 
-You will need to download the game installer from the GOG.com website. Select Theme Hospital from your library, make sure you have **Windows** selected as the system and download the offline backup game installer.
+# Installation Instructions
+
+## Download the game
+
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Theme Hospital*.
+2. Next to the **System** option, select **Linux**.
+3. Click on the link under *DOWNLOAD GAME INSTALLERS*.
 
 ![Theme Hospital Download Page](/assets/images/theme-hospital-download.png)
 
 If you click on the *Download and Install now* link, it will download the galaxy client installer. You won’t be able to install the game on your Chromebook with this installer.
 {: .notice--warning}
 
-After the game installer is downloaded, move it into the Linux Files folder so that you can access the file from the terminal. It should be in the same folder as the theme_hospital_installer.sh file
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
 ![Theme Hospital Files](/assets/images/theme-hospital-files.png)
 
-To install the game, run this command from the Terminal App. The installation script will take a few minutes to complete.
+## Run the Ansible playbook
 
-    cd git/smoke
-    ansible-playbook -i hosts theme_hospital.yml
+1. Start the Terminal App.
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
+3. Run the following command to install the game.
+
+~~~bash
+ansible-playbook -i hosts them_hospital.yml
+~~~
+
+The installation script will take a few minutes to complete.
 
 ## Running the Game
 
