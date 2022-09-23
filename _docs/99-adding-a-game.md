@@ -90,6 +90,7 @@ game_files:
   - { src: "data/noarch/data/DIG.LA1", dest: "{{ base_dir }}/DIG.LA1" }
   - { src: "data/noarch/data/DIGMUSIC.BIN", dest: "{{ base_dir }}/DIGMUSIC.BIN" }
   - { src: "data/noarch/data/DIGVOICE.BUN", dest: "{{ base_dir }}/DIGVOICE.BUN" }
+  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }
 ~~~
 
 ## Templates
