@@ -96,8 +96,7 @@ The installer variable holds information about the install file.
 1. Paste the following lines in the file.
 
 ~~~yaml
-{% raw %}
-# Variables for The Dig
+{% raw %}# Variables for The Dig
 
 # installer
 # parameters:
@@ -110,8 +109,7 @@ installer: {
     path: "{{ home }}/the_dig_en_gog_2_20100.sh",
     convert_filename_lowercase: False,
     type: mojosetup
-    }
-{% endraw %}
+    }{% endraw %}
 ~~~
 
 2. Change the path to match your file.  The "{{ home }}" portion should not change, this is where your *Linux Files* are.
