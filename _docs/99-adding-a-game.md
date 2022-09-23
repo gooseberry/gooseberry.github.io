@@ -96,6 +96,7 @@ The installer variable holds information about the install file.
 1. Paste the following lines in the file.
 
 ~~~yaml
+{% raw %}
 # Variables for The Dig
 
 # installer
@@ -110,6 +111,7 @@ installer: {
     convert_filename_lowercase: False,
     type: mojosetup
     }
+{% endraw %}
 ~~~
 
 2. Change the path to match your file.  The "{{ home }}" portion should not change, this is where your *Linux Files* are.
