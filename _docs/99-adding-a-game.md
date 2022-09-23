@@ -1,6 +1,7 @@
 ---
 title: "Adding a new game"
 permalink: /docs/how-it-works/adding-game/
+layout: single
 toc: true
 toc_label: " On this page"
 toc_icon: "file-alt"
@@ -122,10 +123,10 @@ This variable is simply a place holder for other variables.  It helps to prevent
 1. Paste the following lines at the end of the file.
 
 ~~~yaml
-# Game base directory
+{% raw %}# Game base directory
 # format:
 #   base_dir: /full/path/to/where/game/files/should/be/installed
-base_dir: "{{ home }}/.scummvm/dig"
+base_dir: "{{ home }}/.scummvm/dig"{% endraw %}
 ~~~
 
 2. Change the last part of the path to match the *ScummVM Game Short Name*.
@@ -137,7 +138,7 @@ This is a list of directories that will be created on your system for the game f
 1. Paste the following lines at the end of the file.
 
 ~~~yaml
-# List of directories that need to be created on the system.
+{% raw %}# List of directories that need to be created on the system.
 # The builtin.copy module will not create directories.  You must list
 # all destination directories here.
 # format:
@@ -145,7 +146,7 @@ This is a list of directories that will be created on your system for the game f
 #       - /first/path
 #       - /second/path
 directories:
-    - "{{ base_dir }}/VIDEO"
+    - "{{ base_dir }}/VIDEO"{% endraw %}
 ~~~
 
 2. It's important here to lookup the files required from the [ScummVM Wiki](https://wiki.scummvm.org/index.php?title=Category:Supported_Games) to see if there are any additional folders that need to be created.
@@ -160,9 +161,9 @@ This is an indicator for Ansible to check if the game was already installed on y
 1. Paste the following lines at the end of the file.
 
 ~~~yaml
-# Install record
+{% raw %}# Install record
 # If this file exists, the installer will skip extracting the game content
-install_record: "{{ smoke_config_dir }}/dig"
+install_record: "{{ smoke_config_dir }}/dig"{% endraw %}
 ~~~
 
 2. Change the name of the file to match the *ScummVM Short Game Name*.  It is important that each game in Smoke has a unique filename here.
@@ -176,7 +177,7 @@ Folders will be moved along with their contents.
 1 . Paste the following lines at the end of the file. 
 
 ~~~yaml
-# Game files list with source and destination
+{% raw %}# Game files list with source and destination
 # Note {{ tmp_dir.path }} must be prefixed to the src location
 game_files:
   - { src: "data/noarch/data/VIDEO/", dest: "{{ base_dir }}/VIDEO/" } 
@@ -184,7 +185,7 @@ game_files:
   - { src: "data/noarch/data/DIG.LA1", dest: "{{ base_dir }}/DIG.LA1" }
   - { src: "data/noarch/data/DIGMUSIC.BIN", dest: "{{ base_dir }}/DIGMUSIC.BIN" }
   - { src: "data/noarch/data/DIGVOICE.BUN", dest: "{{ base_dir }}/DIGVOICE.BUN" }
-  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }
+  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }{% endraw %}
 ~~~
 
 2. Change the game files from this list to match the files from your game.
@@ -193,7 +194,7 @@ game_files:
 Once you have added all the section of the variables file, the `vars/main.yml` should look something like this.
 
 ~~~yaml
-# Variables for the indiana jones and the fate of atlantis installer
+{% raw %}# Variables for the indiana jones and the fate of atlantis installer
 
 # installer
 # parameters:
@@ -203,7 +204,7 @@ Once you have added all the section of the variables file, the `vars/main.yml` s
 #                                           converted to lowercase.
 #   - type:         Required    acceptable values: mojosetup, innosetup
 installer: { 
-    path: "{{ home }}/indiana_jones_and_the_fate_of_atlantis_en_gog_2_20145.sh",
+    path: "{{ home }}/the_dig_en_gog_2_20100.sh",
     sha1sum: 340cdc763a7b28f9630b5024a793a9867357a7f2,
     convert_filename_lowercase: False,
     type: mojosetup
@@ -236,7 +237,7 @@ game_files:
   - { src: "data/noarch/data/DIG.LA1", dest: "{{ base_dir }}/DIG.LA1" }
   - { src: "data/noarch/data/DIGMUSIC.BIN", dest: "{{ base_dir }}/DIGMUSIC.BIN" }
   - { src: "data/noarch/data/DIGVOICE.BUN", dest: "{{ base_dir }}/DIGVOICE.BUN" }
-  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }
+  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }{% endraw %}
   ~~~
 
 Save this file and close it.  You are now done with the variables portion of the role.
@@ -250,18 +251,18 @@ The desktop entry file is named according to the game.
 1. Open up the file `roles/dig/templates/dig.desktop.j2` with your editor of choice and paste the following lines in this file. 
 
 ~~~
-[Desktop Entry]
+{% raw %}[Desktop Entry]
 Encoding=UTF-8
 Value=1.0
 Type=Application
 Name=The Dig
 Icon={{ icon_dir }}/dig.png
 Path=/usr/games
-Exec=scummvm dig
+Exec=scummvm dig{% endraw %}
 ~~~
 
 2. Change the Name for the name of the game you are installing.  This is what will appear in the ChromeOS App Launcher.
-3. Leave the `{{ icon_dir }}/` portion of Icon, but change the file name to match the file name of the icon.
+3. Leave the `{% raw %}{{ icon_dir }}/{% endraw %}` portion of Icon, but change the file name to match the file name of the icon.
 4. Change the Exec line to match the ScummVM Short Game Name.
 5. Save this file and close your editor
 
@@ -330,7 +331,7 @@ guioptions=sndNoMIDI
 10. Add the following lines to the `tasks/main.yml`
 
 ~~~yaml
-- name: Insert The Dig game to scummvm
+{% raw %}- name: Insert The Dig game to scummvm
   ansible.builtin.blockinfile:
     path: "{{ home }}/.config/scummvm/scummvm.ini"
     block: |
@@ -341,12 +342,12 @@ guioptions=sndNoMIDI
         engineid=scumm
         guioptions=sndNoMIDI
     state: present
-    marker: "# {mark} DIG BLOCK INSERTED BY SMOKE"
+    marker: "# {mark} DIG BLOCK INSERTED BY SMOKE"{% endraw %}
 ~~~
 
 11. Set the name to match you game.
 12. Replace the configuration between `block: |` and `state: present` with the lines from the scummvm.ini above.
-13. Change the path in the config to `path={{ base_dir }}`
+13. Change the path in the config to `{% raw %}path={{ base_dir }}{% endraw %}`
 14. Modify the marker line with your game name.
 
 ### Desktop Entry
@@ -355,10 +356,10 @@ Deploy the desktop entry file to the ChromeOS launcher.
 1. Paste the following lines to the end of the `tasks/main.yml`
 
 ~~~yaml
-- name: Create Desktop Entry
+{% raw %}- name: Create Desktop Entry
   ansible.builtin.template:
       src: dig.desktop.j2
-      dest: "{{ app_dir }}/dig.desktop"
+      dest: "{{ app_dir }}/dig.desktop"{% endraw %}
 ~~~
 
 2. Modify the *src* line to match the template file in your role.
@@ -369,7 +370,7 @@ After you have completed this section, your `tasks/main.yml` file should resembl
 
 ~~~yaml
 ---
-# The Dig role task
+{% raw %}# The Dig role task
 # This collection of tasks will install and configure The Dig
 # to run with the open-source game engine ScummVM.
 
@@ -397,7 +398,7 @@ After you have completed this section, your `tasks/main.yml` file should resembl
 - name: Create Desktop Entry
   ansible.builtin.template:
       src: dig.desktop.j2
-      dest: "{{ app_dir }}/dig.desktop"
+      dest: "{{ app_dir }}/dig.desktop"{% endraw %}
 ~~~
 
 # Conclusion
