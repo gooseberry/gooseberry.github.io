@@ -1,7 +1,7 @@
 ---
 title: "Adding a new game"
 permalink: /docs/how-it-works/adding-game/
-toc: false
+toc: true
 toc_label: " On this page"
 toc_icon: "file-alt"
 ---
@@ -56,8 +56,34 @@ git push
 With this section, we've created a new branch on GitHub to follow our progress and we've generated an empty framework for our game.  In the next steps, we will fill the framework with variables and instructions to install the game.
 
 
-# 
-in the smoke project, create a new role for your game.
+# Basic Game Information
+Now that we have a framework in place, we need to start populating the files with content to tell Ansible what it is exactly we want to happen to get this game running.
+
+## The Game Playbook
+The playbook is a blueprint for Ansible.  It identifies the systems we want to work on and what tasks we want it to do.
+
+### Playbook for The Dig
+In the previous step, we created an empty playbook file, *dig.yml*.  Let's open up this file with an editor and give it instructions to apply the role **dig** to our computer.  
+
+1. Enter three dashes `---` to signal the start of a document.
+2. Enter a descriptive comment.  Lines that start with # are treated as comments and not processed by Ansible.
+3. Provide a name for the playbook, usually the name of the game to install.
+4. Identify the hosts to configure with this playbook.
+5. List the roles you want to give these hosts.
+
+The file should look like the following.
+
+~~~yaml
+---
+# Install The Dig
+- name: The Dig
+  hosts: all
+  roles:
+    - dig
+~~~
+
+**TIP** - Commit the changes to git after each step.  This makes it easier to track the work you are doing and troubleshoot if you run into problems along the way.
+{: .notice--success}
 
 #### Example
 
