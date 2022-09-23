@@ -49,10 +49,12 @@ After the game installer is downloaded, move it into the **Linux Files** folder 
 ## Run the Ansible playbook
 
 1. Start the Terminal App.
-2. Change directory to where you downloaded *Smoke* `cd git\smoke`
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
 3. Run the following command to install the game.
 
-  ansible-playbook -i hosts descent2.yml
+~~~bash
+ansible-playbook -i hosts descent2.yml
+~~~
 
 The installation script will take a few minutes to complete.
 

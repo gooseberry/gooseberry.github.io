@@ -19,30 +19,43 @@ gallery:
 
 *A first-person shooter video game developed by id Software*
 
-| Store Page                                           | Version      | System  | Installation Method      |
-|------------------------------------------------------|--------------|---------|--------------------------|
-|[Quake II](https://gog.com/game/quake_ii_quad_damage) | 3.20 (gog-3) | Windows | Source Port (Yamagi)     |
-
-## Screenshots
-
 {% include gallery caption="Screenshots from Quake II on an ASUS Flip C434 running Chrome OS 88 with Crostini." %}
 
-The instructions on this page will get you running Quake II on a source port of the original game called Yamagi.  You can find out more about this source port by visiting the [yagami webpage](http://www.yamagi.org/quake2/).  This port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
+# Game Details
 
-## Installation Instructions
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+|[Quake II <i class="fas fa-external-link-alt"></i>](https://gog.com/game/quake_ii_quad_damage) | setup_quake2_quad_damage_2.0.0.3.exe | Inno Setup | [Yamagi <i class="fas fa-external-link-alt"></i>](https://www.yamagi.org/quake2/) (Open-Source port) |
 
-Once you have installed the prerequisites above, you will need to download the game installer from the GOG.com website. Select Quake II from your library and download the offline backup game installer.
+# Installation Instructions
+
+## Download the game
+
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Quake II*.
+2. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.
 
 ![Quake II Download page](/assets/images/quake2-download.png)
 
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal. It should be in the same folder as the *quake_2_installer.sh* file.
+If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this file.
+{: .notice--warning}
+
+## Move the installer to Linux Files
+
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
 ![Quake II installer files](/assets/images/quake2-files.png)
 
-To install the game, run this command from the Terminal App.  The installation script will take a few minutes to complete.
+## Run the Ansible playbook
 
-    cd git/smoke
+1. Start the Terminal App.
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
+3. Run the following command to install the game.
+
+~~~bash
     ansible-playbook -i hosts quake2
+~~~
+
+The installation script will take a few minutes to complete.
 
 ## Running the Game
 

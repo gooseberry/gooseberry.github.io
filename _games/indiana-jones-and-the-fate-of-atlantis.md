@@ -2,6 +2,7 @@
 title: "Indiana Jones and the Fate of Atlantis"
 permalink: /games/indiana-jones-and-the-fate-of-atlantis/
 excerpt: "Indiana Jones and the Fate of Atlantis is a point-and-click adventure game developed and published by LucasArts."
+toc: false
 header:
   teaser: assets/images/atlantis-screen2-th.png
 toc: false
@@ -17,35 +18,45 @@ gallery:
     image_alt: "Screenshot 3"
 ---
 
-| Store Page                      | Version | System          | Installation Method                        |
-|---------------------------------|---------|-----------------|--------------------------------------------|
-|[Indiana Jones and the fate of Atlantis <i class="fas fa-external-link-alt"></i>](https://gog.com/game/indiana_jones_and_the_fate_of_atlantis)| gog-2     | Linux | ScummVM |
-
-## Screenshots
-
 {% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 105 with Crostini." %}
 
 This install method was last tested on 2022-09-15 ont Chrome 105.
 {: .notice--info}
 
-The instructions on this page will get you running Indiana Jones and the Fate of Atlantis on the latest version of [ScummVM <i class="fas fa-external-link-alt"></i>](https://scummvm.org).  While it is possible to run this game with the version of ScummVM packaged from GOG.com, this installer opts to use a common ScummVM installation for all games supported by the engine.
+# Game Details
 
-## Installation Instructions
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+|[Indiana Jones and the fate of Atlantis <i class="fas fa-external-link-alt"></i>](https://gog.com/game/indiana_jones_and_the_fate_of_atlantis)| indiana_jones_and_the_fate_of_atlantis_en_gog_2_20145.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>(https://scummvm.org) (Open-Source) |
 
-ou will need to download the game installer from the GOG.com website. Select Indiana Jones and the Fate of Atlantis from your library and download the offline backup game installer.
+# Installation Instructions
+
+## Download the game
+
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Indiana Jones and the Fate of Atlantis*.
+2. Next to the **System** option, select **Linux**.
+3. Click on the link under *DOWNLOAD GAME INSTALLERS*.
 
 ![Indiana Jones and the Fate of Atlantis  Download page](/assets/images/atlantis-download.png)
+
+## Move the installer to Linux Files
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
 ![Indiana Jones and the Fate of Atlantis installer files](/assets/images/atlantis-files.png)
 
-To install the game, run these two commands from the Terminal App.  The installer will take a few minutes to complete.
+## Run the Ansible playbook
 
-    cd git/smoke
-    ansible-playbook -i hosts indiana_jones_and_the_fate_of_atlantis.yml
+1. Start the Terminal App.
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
+3. Run the following command to install the game.
 
+~~~bash
+ansible-playbook -i hosts indiana_jones_and_the_fate_of_atlantis.yml
+~~~
 
-## Running the Game
+The installation script will take a few minutes to complete.
 
-The installation script creates application icons in the Chrome Launcher.  You can find a shortcut for Indiana Jones and the Fate of Atlantis under the *Linux apps* folder in the Launcher.
+# Running the Game
+
+Once teh installation is complete, you can start the game by clicking on the *Indiana Jones and the Fate of Atlantis* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*
