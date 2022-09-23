@@ -1,7 +1,7 @@
 ---
 title: "Adding a new game"
 permalink: /docs/how-it-works/adding-game/
-layout: single
+class: none
 toc: true
 toc_label: " On this page"
 toc_icon: "file-alt"
