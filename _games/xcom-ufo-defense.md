@@ -19,34 +19,44 @@ gallery:
 
 *A science fiction strategy game developped by Mythos Games*
 
-| Store Page                                              | Version | System          | Installation Method                        |
-|---------------------------------------------------------|---------|-----------------|--------------------------------------------|
-|[X-COM UFO Defense](https://www.gog.com/game/xcom_ufo_defense)| 1.2      | Windows         | Source Port (OpenXcom)                     |
-
-## Screenshots
-
 {% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 85 with Crostini." %}
 
-The instructions on this page will get you running X-COM UFO Defense on a source port of the original game called OpenXcom. You can find out more about this source port by visiting the [OpenXcom webpage](https://openxcom.org/).. While it is possible to get the game to run with DosBox as packaged from GOG.com, this port incorporates a number of bug fixes from the original game and supports high resolution screens without altering the look and feel of the game.
+# Game Details
 
-## Installation Instructions
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+|[X-COM UFO Defense <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/xcom_ufo_defense)|  | setup_x-com_ufo_defense_1.2_(28046).exe | Inno Setup | [OpenXcom <i class="fas fa-external-link-alt"></i>](https://openxcom.org/) (Open-Source Port) |
 
-You will need to download the game installer from the GOG.com website. Select X-COM UFO Defense from your library, make sure you have **Windows** selected as the system and download the offline backup game installer.
+# Installation Instructions
+
+## Download the game
+
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *X-COM UFO Defense*.
+2. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.
 
 ![X-COM UFO Defense Download Page](/assets/images/xcom-ufo-defense-download.png)
 
 If you click on the *Download and Install now* link, it will download the galaxy client installer. You won’t be able to install the game on your Chromebook with this installer.
 {: .notice--warning}
 
-After the game installer is downloaded, move it into the Linux Files folder so that you can access the file from the terminal.
+## Move the installer to Linux Files
+
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
 ![X-COM UFO Defense Files](/assets/images/xcom-ufo-defense-files.png)
 
-To install the game, run this command from the Terminal App. The installation script will take a few minutes to complete.
+## Run the Ansible playbook
 
-    cd git/smoke
-    ansible-playbook -i hosts xcom_ufo_defense.yml
+1. Start the Terminal App.
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
+3. Run the following command to install the game.
+
+~~~bash
+ansible-playbook -i hosts xcom_ufo_defense.yml
+~~~
+
+The installation script will take a few minutes to complete.
 
 ## Running the Game
 
-Once the installation is complete. You can start the game by clicking on the X-COM UFO Defense icon from the Chrome OS Application Launcher. The icon will be located in a group labelled Linux apps
+Once the installation is complete. You can start the game by clicking on the X-COM UFO Defense icon from the Chrome OS Application Launcher. The icon will be located in a group labelled *Linux apps*
