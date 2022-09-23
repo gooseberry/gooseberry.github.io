@@ -17,7 +17,7 @@ The process of creating a game install script is manual and requires some diggin
 
 1. The installer from gog.com (either Windows or Linux)
 2. Access to the [ScummVM Supported Games Wiki](https://wiki.scummvm.org/index.php?title=Category:Supported_Games)
-3. 
+3. The [ScummVM Compatibilty List](https://www.scummvm.org/compatibility/2.6.0/)
 
 # Set-up the Framework
 Once you have all the tools you will need to create the script, it's time to get your system organized.
@@ -46,11 +46,13 @@ From the terminal, we'll type in the commands below which will create a role cal
 
 ~~~bash
 mkdir -p {roles/dig/tasks,roles/dig/templates/,roles/dig/vars}
-touch {dig.yml,roles/dig/tasks/main.yml,roles/git/template/dig.desktop.j2,roles/dig/vars/main.yml}
+touch {dig.yml,roles/dig/tasks/main.yml,roles/git/templates/dig.desktop.j2,roles/dig/vars/main.yml}
 git add -A
 git commit -m "ansible framework for The Dig"
 git push
 ~~~
+
+I recommend you use the ScummVM "Game Short Name" for your role to remain consistent with that platform.  Lookup the game in the [ScummVM Compatibilty Chart](https://www.scummvm.org/compatibility/2.6.0/)
 
 ## Expected Results
 With this section, we've created a new branch on GitHub to follow our progress and we've generated an empty framework for our game.  In the next steps, we will fill the framework with variables and instructions to install the game.
@@ -85,63 +87,85 @@ The file should look like the following.
 **TIP** - Commit the changes to git after each step.  This makes it easier to track the work you are doing and troubleshoot if you run into problems along the way.
 {: .notice--success}
 
-#### Example
+## Variables File
+Specific information about each game is stored in a a variables files `vars/main.yml` within the game's specific role.  For instance, the variables file for **The Dig** is `/roles/dig/vars/main.yml`.  Open this file with the editor of your choice and we'll fill each section.
 
-~~~bash
-mkdir -p roles/dig/vars
-mkdir -p roles/dig/templates
-mkdir -p roles/dig/tasks
-~~~
+### Installer
+The installer variable holds information about the install file.
 
-## vars
-Create a text file called main.yml in the vars directory.    
-
-### The Installer
-1. The file name for the installer
-2. The sha1sum of the installer
-3. Does this game need to be converted to lowercase? (default is no)
-4. What type of install will be done (options are: innosetup, mojosetup, native)
-
-#### Example
+1. Paste the following lines in the file.
 
 ~~~yaml
-installer: {
-  path: "{{ home }}/the_dig_en_gog_2_20100.sh"
-  sha1sum:
-  convert_filename_lowercase: False
-  type: mojosetup
-  }
+# Variables for The Dig
+
+# installer
+# parameters:
+#   - path:         Required    full path to the install file.
+#   - sha1sum:      Optional    not used. planned to check file integrity in future
+#   - convert_filename_lowercase: Required  set to true if filenames need to be
+#                                           converted to lowercase.
+#   - type:         Required    acceptable values: mojosetup, innosetup
+installer: { 
+    path: "{{ home }}/the_dig_en_gog_2_20100.sh",
+    convert_filename_lowercase: False,
+    type: mojosetup
+    }
 ~~~
 
-###  Base directory
-For ScummVM games, this is usually a directory with a short name of the game in a dedicated .scummvm directory.
+2. Change the path to match your file.  The "{{ home }}" portion should not change, this is where your *Linux Files* are.
+3. convert_filename_lowercase does not need to be changed for ScummVM games.
+4. For Linux installers, set  `type: mojosetup`, for Windows installers, `type: innosetup`.
 
-#### Example
+### Game Base Directory
+This variable is simply a place holder for other variables.  It helps to prevent mistakes and it keeps the configuration cleaner.
+
+1. Paste the following lines at the end of the file.
 
 ~~~yaml
-base_dir: "{{ home }}/.scummvm/dig
+# Game base directory
+# format:
+#   base_dir: /full/path/to/where/game/files/should/be/installed
+base_dir: "{{ home }}/.scummvm/dig"
 ~~~
+
+2. Change the last part of the path to match the *ScummVM Game Short Name*.
+
 
 ### Directories
+This is a list of directories that will be created on your system for the game files.
 
-Along with the games files, Ansible also need a separate list of directories that it needs to create.  You don't need to specify each parent directory in a different list item, Ansible will create each parent directory to the child.
-
-#### Example
+1. Paste the following lines at the end of the file.
 
 ~~~yaml
+# List of directories that need to be created on the system.
+# The builtin.copy module will not create directories.  You must list
+# all destination directories here.
+# format:
+#   directories:
+#       - /first/path
+#       - /second/path
 directories:
-  - "{{ base_dir }}/VIDEO"
+    - "{{ base_dir }}/VIDEO"
 ~~~
+
+2. It's important here to lookup the files required from the [ScummVM Wiki](https://wiki.scummvm.org/index.php?title=Category:Supported_Games) to see if there are any additional folders that need to be created.
+
+Ansible tasks cannot move files into a folder unless it is first created.  Thus, if you miss some folders in this part of the configuration, your installation will fail.
+{: .notice--warning}
+
 
 ### Install Record
+This is an indicator for Ansible to check if the game was already installed on your system.  To remain idempotent, Smoke will not extract the files from the [GOG.com](https://gog.com) installer if this file is present.
 
-This is a temporary fix I put in place to identify when a game has been installed.  Ansible will create this file when it installs the game and look for it to avoid extracting the file again should you run the playbook.
-
-#### Example
+1. Paste the following lines at the end of the file.
 
 ~~~yaml
+# Install record
+# If this file exists, the installer will skip extracting the game content
 install_record: "{{ smoke_config_dir }}/dig"
 ~~~
+
+2. Change the name of the file to match the *ScummVM Short Game Name*.  It is important that each game in Smoke has a unique filename here.
 
 ### Game Files
 
@@ -149,9 +173,11 @@ The list of required game files are listed on the ScummVM Wiki page for the game
 
 Folders will be moved along with their contents.
 
-#### Example 
+1 . Paste the following lines at the end of the file. 
 
 ~~~yaml
+# Game files list with source and destination
+# Note {{ tmp_dir.path }} must be prefixed to the src location
 game_files:
   - { src: "data/noarch/data/VIDEO/", dest: "{{ base_dir }}/VIDEO/" } 
   - { src: "data/noarch/data/DIG.LA0", dest: "{{ base_dir }}/DIG.LA0" }
@@ -161,22 +187,191 @@ game_files:
   - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }
 ~~~
 
-## Templates
-Create a desktop template for your games
+2. Change the game files from this list to match the files from your game.
 
-### INSERT SAMPLE DESKTOP FILE HERE
+### Completed File
+Once you have added all the section of the variables file, the `vars/main.yml` should look something like this.
+
+~~~yaml
+# Variables for the indiana jones and the fate of atlantis installer
+
+# installer
+# parameters:
+#   - path:         Required    full path to the install file.
+#   - sha1sum:      Optional    not used. planned to check file integrity in future
+#   - convert_filename_lowercase: Required  set to true if filenames need to be
+#                                           converted to lowercase.
+#   - type:         Required    acceptable values: mojosetup, innosetup
+installer: { 
+    path: "{{ home }}/indiana_jones_and_the_fate_of_atlantis_en_gog_2_20145.sh",
+    sha1sum: 340cdc763a7b28f9630b5024a793a9867357a7f2,
+    convert_filename_lowercase: False,
+    type: mojosetup
+    }
+
+# Game base directory
+# format:
+#   base_dir: /full/path/to/where/game/files/should/be/installed
+base_dir: "{{ home }}/.scummvm/dig"
+
+# List of directories that need to be created on the system.
+# The builtin.copy module will not create directories.  You must list
+# all destination directories here.
+# format:
+#   directories:
+#       - /first/path
+#       - /second/path
+directories:
+    - "{{ base_dir }}/VIDEO"
+
+# Install record
+# If this file exists, the installer will skip extracting the game content
+install_record: "{{ smoke_config_dir }}/dig"
+
+# Game files list with source and destination
+# Note {{ tmp_dir.path }} must be prefixed to the src location
+game_files:
+  - { src: "data/noarch/data/VIDEO/", dest: "{{ base_dir }}/VIDEO/" } 
+  - { src: "data/noarch/data/DIG.LA0", dest: "{{ base_dir }}/DIG.LA0" }
+  - { src: "data/noarch/data/DIG.LA1", dest: "{{ base_dir }}/DIG.LA1" }
+  - { src: "data/noarch/data/DIGMUSIC.BIN", dest: "{{ base_dir }}/DIGMUSIC.BIN" }
+  - { src: "data/noarch/data/DIGVOICE.BUN", dest: "{{ base_dir }}/DIGVOICE.BUN" }
+  - { src: "data/noarch/support/icon.png", dest: "{{ icon_dir }}/dig.png" }
+  ~~~
+
+Save this file and close it.  You are now done with the variables portion of the role.
+
+## Templates
+Templates are typically configuration files that need to be placed on your system to run the game you're trying to install.  The configuration files will be modified according to the variables you set along with system information collected during the installation.  ScummVM games only have one template, the Desktop Entry to integrate the game with the ChromeOS launcher.
+
+### Desktop Entry for The Dig
+The desktop entry file is named according to the game.  
+
+1. Open up the file `roles/dig/templates/dig.desktop.j2` with your editor of choice and paste the following lines in this file. 
+
+~~~
+[Desktop Entry]
+Encoding=UTF-8
+Value=1.0
+Type=Application
+Name=The Dig
+Icon={{ icon_dir }}/dig.png
+Path=/usr/games
+Exec=scummvm dig
+~~~
+
+2. Change the Name for the name of the game you are installing.  This is what will appear in the ChromeOS App Launcher.
+3. Leave the `{{ icon_dir }}/` portion of Icon, but change the file name to match the file name of the icon.
+4. Change the Exec line to match the ScummVM Short Game Name.
+5. Save this file and close your editor
 
 ## Tasks
-Create a text file called main.yml in the tasks directory.
+Stored in `tasks/main.yml`, the tasks consists of the specific instructions for Ansible to configure your game onto your system.  Open up the file with your text editor and follow along the next sections to complete this intaller.
 
-For a ScummVM game, the main.yml file should look like this:
+### Comments
+Every task listing should start with a short descriptive comment explaining what you are attempting to do with this.
+
+1. Paste the following content into your tasks file.
 
 ~~~yaml
 ---
 # The Dig role task
 # This collection of tasks will install and configure The Dig
 # to run with the open-source game engine ScummVM.
+~~~
 
+2. Change the comments to reflect what game you are trying to install and how it will run.
+
+### Install Game Engine
+Not every game requires a separate entry for a game engine.  A separate role is created to handle these and we simply need to import the correct role.  This ensures that the game engine is installed and configured as we expect it to be.
+
+1. Paste the following content at the end of the task file for ScummVM games.
+
+~~~yaml
+- name: Install ScummVM
+  ansible.builtin.import_role:
+      name: scummvm
+~~~
+
+### Install Game
+The install process for most games follow a similar set of rules.  These have been grouped together in a role called install.  To install our game, we simply need to include that role in our task lising.
+
+1. Paste the following content at the end of the task file.
+
+~~~yaml
+- name: Installing...
+  ansible.builtin.include_role:
+      name: install
+~~~
+
+### Import Game into ScummVM
+With the game installed on your system, we need to configure ScummVM with the details of the game.  The following steps will 
+
+1. Extract the game into a temporary folder using either `unzip` or `innoextract`.
+2. Launch ScummVM from ChromeOS.
+3. Click on **Add Game...*
+4. Browse to your temporary folder and drill down into data/noarch/data then click on **Choose**.
+5. Close ScummVM.
+6. Launch the ChromeOS Files app.
+7. Click on the *three dot* menu and enable the **Show hidden files** option.
+7. Browse to **Linux Files > .config > scummvm**
+8. Open the **scummvm.ini** file with a text editor.
+9. The specific game configuration will be appended at the end of this file.  It will look something like this
+
+~~~bash
+[dig]
+gameid=dig
+description=The Dig
+path=/home/smoke/tmp/data/noarch/data
+engineid=scumm
+guioptions=sndNoMIDI 
+~~~
+
+10. Add the following lines to the `tasks/main.yml`
+
+~~~yaml
+- name: Insert The Dig game to scummvm
+  ansible.builtin.blockinfile:
+    path: "{{ home }}/.config/scummvm/scummvm.ini"
+    block: |
+        [dig]
+        gameid=dig
+        description=The Dig
+        path={{ base_dir }}
+        engineid=scumm
+        guioptions=sndNoMIDI
+    state: present
+    marker: "# {mark} DIG BLOCK INSERTED BY SMOKE"
+~~~
+
+11. Set the name to match you game.
+12. Replace the configuration between `block: |` and `state: present` with the lines from the scummvm.ini above.
+13. Change the path in the config to `path={{ base_dir }}`
+14. Modify the marker line with your game name.
+
+### Desktop Entry
+Deploy the desktop entry file to the ChromeOS launcher.
+
+1. Paste the following lines to the end of the `tasks/main.yml`
+
+~~~yaml
+- name: Create Desktop Entry
+  ansible.builtin.template:
+      src: dig.desktop.j2
+      dest: "{{ app_dir }}/dig.desktop"
+~~~
+
+2. Modify the *src* line to match the template file in your role.
+3. Modify the *dest* line to match your game name.
+
+### Completed file
+After you have completed this section, your `tasks/main.yml` file should resemble the following.
+
+~~~yaml
+---
+# The Dig role task
+# This collection of tasks will install and configure The Dig
+# to run with the open-source game engine ScummVM.
 
 - name: Install ScummVM
   ansible.builtin.import_role:
@@ -190,20 +385,20 @@ For a ScummVM game, the main.yml file should look like this:
   ansible.builtin.blockinfile:
     path: "{{ home }}/.config/scummvm/scummvm.ini"
     block: |
-        [atlantis]
-        platform=pc
-        gameid=atlantis
-        description=Indiana Jones and the Fate of Atlantis (CD/DOS/English)
-        language=en
-        extra=CD
+        [dig]
+        gameid=dig
+        description=The Dig
         path={{ base_dir }}
-        enable_enhancements=true
         engineid=scumm
-        guioptions=gameOption2 lang_English
+        guioptions=sndNoMIDI
     state: present
-    marker: "# {mark} ATLANTIS BLOCK INSERTED BY SMOKE"
+    marker: "# {mark} DIG BLOCK INSERTED BY SMOKE"
 
 - name: Create Desktop Entry
   ansible.builtin.template:
       src: dig.desktop.j2
       dest: "{{ app_dir }}/dig.desktop"
+~~~
+
+# Conclusion
+The role you have created should be ready for testing.  Save all your files and commit the changes to git.  You should then test your installation with the setup file from GOG.com to see if it works as intended.  If you get no errors, you can submit a pull request to merge this with the main repository.
