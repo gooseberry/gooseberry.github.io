@@ -13,10 +13,15 @@ docs:
         url: /docs/getting-started/
       - title: "How it works"
         url: /docs/how-it-works/
+        children:
+          - title: "Adding a new Game"
+            usr: /docs/how-it-works/adding-game/
   - title: Games
     children:
       - title: "Descent 2"
         url: /games/descent-2/
+      - title: "The Dig"
+        url: /games/dig/
       - title: "Indiana Jones and the Fate of Atlantis"
         url: /games/indiana-jones-and-the-fate-of-atlantis/
       - title: "Quake"
