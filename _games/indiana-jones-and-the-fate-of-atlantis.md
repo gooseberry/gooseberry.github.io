@@ -59,4 +59,4 @@ The installation script will take a few minutes to complete.
 
 # Running the Game
 
-Once teh installation is complete, you can start the game by clicking on the *Indiana Jones and the Fate of Atlantis* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*
+Once the installation is complete, you can start the game by clicking on the *Indiana Jones and the Fate of Atlantis* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*
