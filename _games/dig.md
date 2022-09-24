@@ -5,7 +5,6 @@ excerpt: "The Dig is a point-and-click adventure game developed and published by
 toc: false
 header:
   teaser: assets/images/dig-screen2-th.png
-toc: false
 gallery:
   - url: /assets/images/dig-screen1.png
     image_path: assets/images/dig-screen1-th.png

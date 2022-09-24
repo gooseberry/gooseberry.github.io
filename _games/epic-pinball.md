@@ -5,7 +5,6 @@ excerpt: "Epic Pinball is a pinball game developed by James Schmalz and publishe
 toc: false
 header:
   teaser: assets/images/epic-pinball-floppy.png
-toc: false
 gallery:
   - url: /assets/images/epic-pinball-screen1.png
     image_path: assets/images/epic-pinball-screen1-th.png

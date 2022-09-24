@@ -5,7 +5,6 @@ excerpt: "Indiana Jones and the Fate of Atlantis is a point-and-click adventure 
 toc: false
 header:
   teaser: assets/images/atlantis-screen2-th.png
-toc: false
 gallery:
   - url: /assets/images/atlantis-screen1.png
     image_path: assets/images/atlantis-screen1-th.png
