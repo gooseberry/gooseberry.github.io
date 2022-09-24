@@ -44,7 +44,7 @@ This install method was last tested on 2022-09-24 ont Chrome 105.
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
-![Epic Pinball installer files](/assets/images/dig-files.png)
+![Epic Pinball installer files](/assets/images/epic-pinball-files.png)
 
 ## Run the Ansible playbook
 
