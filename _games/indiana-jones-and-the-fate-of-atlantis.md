@@ -27,7 +27,7 @@ This install method was last tested on 2022-09-15 ont Chrome 105.
 
 | Store Page | Setup File | Installer Type | Game Engine |
 |:--|:--|:--|:--|
-|[Indiana Jones and the fate of Atlantis <i class="fas fa-external-link-alt"></i>](https://gog.com/game/indiana_jones_and_the_fate_of_atlantis)| indiana_jones_and_the_fate_of_atlantis_en_gog_2_20145.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>(https://scummvm.org) (Open-Source) |
+| [Indiana Jones and the fate of Atlantis <i class="fas fa-external-link-alt"></i>](https://gog.com/game/indiana_jones_and_the_fate_of_atlantis) | indiana_jones_and_the_fate_of_atlantis_en_gog_2_20145.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>(https://scummvm.org) (Open-Source) |
 
 # Installation Instructions
 

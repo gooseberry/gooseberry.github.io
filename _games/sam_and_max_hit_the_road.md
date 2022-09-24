@@ -26,7 +26,7 @@ This install method was last tested on 2022-09-15 ont Chrome 105.
 
 | Store Page | Setup File | Installer Type | Game Engine |
 |:--|:--|:--|:--|
-|[Sam and Max: Hit the Road <i class="fas fa-external-link-alt"></i>](https://gog.com/game/sam_max_hit_the_road)| sam_and_max_hit_the_road_en_gog_2_20100.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>(https://scummvm.org) (Open-Source) |
+| [Sam and Max: Hit the Road <i class="fas fa-external-link-alt"></i>](https://gog.com/game/sam_max_hit_the_road) | sam_and_max_hit_the_road_en_gog_2_20100.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>(https://scummvm.org) (Open-Source) |
 
 # Installation Instructions
 
