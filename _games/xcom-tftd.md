@@ -4,7 +4,7 @@ permalink: /games/xcom-terror-from-the-deep/
 excerpt: "A science fiction strategy video game developed by Mythos Games and published by MicroProse"
 toc: false
 header:
-  teaser: assets/images/xcom-tftd-screen4-th.png
+  teaser: assets/images/xcom-tftd-floppy.png
 gallery:
   - url: /assets/images/xcom-tftd-screen1.png
     image_path: assets/images/xcom-tftd-screen1-th.png

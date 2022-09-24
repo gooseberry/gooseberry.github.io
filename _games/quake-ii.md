@@ -3,7 +3,7 @@ title: "Quake II: Quad Damage"
 permalink: /games/quake-ii/
 excerpt: "A first-person shooter video game developed by id Software."
 header:
-  teaser: assets/images/quake2-screen1-th.png
+  teaser: assets/images/quake2-floppy.png
 toc: false
 gallery:
   - url: /assets/images/quake2-screen1.png

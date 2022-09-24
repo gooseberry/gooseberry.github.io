@@ -4,7 +4,7 @@ permalink: /games/darkest-dungeon/
 excerpt: "A role-playing video game developed by Red Hook Studios."
 toc: false
 header:
-  teaser: assets/images/darkest-dungeon-screen1-th.png
+  teaser: assets/images/darkest-dungeon-floppy.png
 gallery:
   - url: /assets/images/darkest-dungeon-screen1.png
     image_path: assets/images/darkest-dungeon-screen1-th.png
