@@ -16,7 +16,6 @@ gallery:
     image_path: assets/images/epic-pinball-screen3-th.png
     image_alt: "Screenshot 3"
   - url: /assets/images/epic-pinball-screen4.png
-    image_path: assets/images/epic-pinball-screen4-th.png
     image_alt: "Screenshot 4"
 ---
 

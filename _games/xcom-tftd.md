@@ -16,7 +16,6 @@ gallery:
     image_path: assets/images/xcom-tftd-screen3-th.png
     image_alt: "Screenshot 3"
   - url: /assets/images/xcom-tftd-screen4.png
-    image_path: assets/images/xcom-tftd-screen4-tf.png
     image_alt: "Screenshot 4"
 ---
 
