@@ -39,6 +39,8 @@ gallery:
 
 After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
+![Torchlight II installer files](/assets/images/torchlight-ii-files.png)
+
 ## Run the Ansible playbook
 
 1. Start the Terminal App.

@@ -59,4 +59,4 @@ The installation script will take a few minutes to complete.
 
 ## Running the Game
 
-Once the installation is complete. You can start the game by clicking on the X-COM UFO Defense icon from the Chrome OS Application Launcher. The icon will be located in a group labelled *Linux apps*
+Once the installation is complete. You can start the game by clicking on the OpenXcom icon from the Chrome OS Application Launcher. The icon will be located in a group labelled *Linux apps*
