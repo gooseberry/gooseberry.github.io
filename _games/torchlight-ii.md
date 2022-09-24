@@ -19,44 +19,38 @@ gallery:
 
 *An action role-playing dungeon crawler video game.*
 
-| Store Page                                               | Version  | System | Installation Method |
-|----------------------------------------------------------|----------|--------|---------------------|
-| [Torchlight II ](https://www.gog.com/game/torchlight_ii) | 1.25.9.7 | Linux  | Native Linux        |
-
-## Screenshots
-
 {% include gallery caption="Torchlight II screenshots from an ASUS Flip C434 running Chrome OS 81 with Crostini." %}
 
-Torchlight II comes with a linux installer which can be installed with the Linux (Beta) feature of your Chromebook.  This is the easiest method to install the game.
+| Store Page | Setup File | Installer Type | Game Engine |
+|:--|:--|:--|:--|
+| [Torchlight II <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/torchlight_ii) | gog_torchlight_2_2.0.0.2.sh | Native  | Native Linux |
 
-## Prerequisites
+# Installation Instructions
 
-- Setup [Linux (Beta)](/docs/linux-beta/#set-up-linux-beta-on-your-chromebook)
-- Enable [Pointer lock](/docs/pointer-lock)
-- Enable and Activate [GPU Support](/docs/gpu-support)
+## Download the game
 
-## Installation Instructions
-
-Once you have installed the prerequisites above, you will need to download the game installer from the GOG.com website.  Select Torchlight II from your library, make sure you have **Linux** selected as the system and download the offline backup game installer.
+1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Torchlight 2*.
+2. Next to the **System** option, select **Linux**.
+3. Click on the link under *DOWNLOAD GAME INSTALLERS*.
 
 ![Torchlight II Download Linux Installer](/assets/images/torchlight-ii-download.png)
 
-After the game installer is downloaded, move it into the Linux Files folder so that you can access the file from the terminal.  Copy the commands below and paste it into your terminal to start the Torchlight II installer.  Follow the on screen instructions and wait for the installation to finish.
+## Move the installer to Linux Files
 
-    chmod +x gog_torchlight_2_*.sh
-    ./gog_torchlight_2_*.sh
+After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
 
+## Run the Ansible playbook
 
+1. Start the Terminal App.
+2. Change directory to where you downloaded *Smoke* `cd git/smoke`
+3. Run the following command to install the game.
 
-## Post-install Clean up
+~~~bash
+ansible-playbook -i hosts torchlight2.yml
+~~~
 
-You can delete the Torchlight II installer from your Chromebook.  The file isn't need to play the game.
+The installation script will take a few minutes to complete.
 
 ## Running the Game
 
 Once the installation is complete. You can start the game by clicking on the Torchlight II icon from the Chrome OS Application Launcher. The icon will be located in a group labelled Linux apps
-
-## Known Issues
-
-Check the [Troubleshooting](/docs/troubleshooting) section of this guide for some common problems along with some tips on resolving these issues.
-
