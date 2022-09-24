@@ -3,7 +3,7 @@ title: "Quake"
 permalink: /games/quake/
 excerpt: "A first-person shooter video game developed by id Software."
 header:
-  teaser: assets/images/quake-screen1-th.png
+  teaser: assets/images/quake-floppy.png
 toc: false
 gallery:
   - url: /assets/images/quake-screen1.png

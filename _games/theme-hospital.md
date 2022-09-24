@@ -4,7 +4,7 @@ permalink: /games/theme-hospital/
 excerpt: "A hospital business simulation game developped by Bullfrog Productions."
 toc: false
 header:
-  teaser: assets/images/theme-hospital-screen1-th.png
+  teaser: assets/images/theme-hospital-floppy.png
 gallery:
   - url: /assets/images/theme-hospital-screen1.png
     image_path: assets/images/theme-hospital-screen1-th.png

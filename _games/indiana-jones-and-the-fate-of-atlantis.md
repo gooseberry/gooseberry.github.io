@@ -4,7 +4,7 @@ permalink: /games/indiana-jones-and-the-fate-of-atlantis/
 excerpt: "Indiana Jones and the Fate of Atlantis is a point-and-click adventure game developed and published by LucasArts."
 toc: false
 header:
-  teaser: assets/images/atlantis-screen2-th.png
+  teaser: assets/images/atlantis-floppy.png
 gallery:
   - url: /assets/images/atlantis-screen1.png
     image_path: assets/images/atlantis-screen1-th.png

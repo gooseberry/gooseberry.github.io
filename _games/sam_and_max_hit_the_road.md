@@ -3,7 +3,7 @@ title: "Sam and Max: Hit the Road"
 permalink: /games/sam-and-max-hit-the-road/
 excerpt: "Sam and Max: Hit the Road is a point-and-click adventure game developed and published by LucasArts."
 header:
-  teaser: assets/images/samnmax-screen1-th.png
+  teaser: assets/images/samnmax-floppy.png
 toc: false
 gallery:
   - url: /assets/images/samnmax-screen1.png

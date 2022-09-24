@@ -4,7 +4,7 @@ permalink: /games/epic-pinball/
 excerpt: "Epic Pinball is a pinball game developed by James Schmalz and published by Epic MegaGames."
 toc: false
 header:
-  teaser: assets/images/epic-pinball-screen1-th.png
+  teaser: assets/images/epic-pinball-floppy.png
 gallery:
   - url: /assets/images/epic-pinball-screen1.png
     image_path: assets/images/epic-pinball-screen1-th.png

@@ -4,7 +4,7 @@ permalink: /games/descent-2/
 excerpt: "A first person shooter video game developed by Parallax Software."
 toc: false
 header:
-  teaser: assets/images/descent-2-screen1-th.png
+  teaser: assets/images/descent-2-floppy.png
 gallery:
   - url: /assets/images/descent-2-screen1.png
     image_path: assets/images/descent-2-screen1-th.png

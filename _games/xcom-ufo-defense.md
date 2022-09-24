@@ -4,7 +4,7 @@ permalink: /games/xcom-ufo-defense/
 excerpt: "A science fiction strategy video game developed by Mythos Games and published by MicroProse"
 toc: false
 header:
-  teaser: assets/images/xcom-ufo-defense-screen1-th.png
+  teaser: assets/images/xcom-ufo-defense-floppy.png
 gallery:
   - url: /assets/images/xcom-ufo-defense-screen1.png
     image_path: assets/images/xcom-ufo-defense-screen1-th.png
