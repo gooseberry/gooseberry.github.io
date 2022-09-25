@@ -1,7 +1,7 @@
 ---
 title: "The Dig"
 permalink: /games/dig/
-excerpt: "The Dig is a point-and-click adventure game developed and published by LucasArts."
+excerpt: "The Dig is a brilliant experience that dives us masterfully in a strange, but beautiful alien world, full of secrets and surprises.  The game with such an amazing soundtrack that it was released on CD and is available in record stores as we speak.  The Dig is a masterpiece in gaming, and a work of art."
 toc: false
 header:
   overlay_image: /assets/images/dig_header.png
