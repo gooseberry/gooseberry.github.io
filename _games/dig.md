@@ -6,9 +6,9 @@ toc: false
 header:
   overlay_image: /assets/images/dig_header.png
   teaser: assets/images/dig-teaser.png
-actions:
-  - label: "Store Page"
-    url: "https://gog.com/game/the_dig"
+  actions:
+    - label: "Store Page"
+      url: "https://gog.com/game/the_dig"
 gallery:
   - url: /assets/images/dig-screen1.png
     image_path: assets/images/dig-screen1-th.png
