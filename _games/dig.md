@@ -4,7 +4,8 @@ permalink: /games/dig/
 excerpt: "The Dig is a point-and-click adventure game developed and published by LucasArts."
 toc: false
 header:
-  teaser: assets/images/dig-floppy.png
+  overlay_image: /assets/images/the_dig_header.png
+  teaser: assets/images/the_dig-header.png
 gallery:
   - url: /assets/images/dig-screen1.png
     image_path: assets/images/dig-screen1-th.png
