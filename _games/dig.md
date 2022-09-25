@@ -4,8 +4,11 @@ permalink: /games/dig/
 excerpt: "The Dig is a point-and-click adventure game developed and published by LucasArts."
 toc: false
 header:
-  overlay_image: /assets/images/the_dig_header.png
-  teaser: assets/images/the_dig-header.png
+  overlay_image: /assets/images/dig_header.png
+  teaser: assets/images/dig-teaser.png
+action:
+  - label: "Store Page"
+    url: "https://gog.com/game/the_dig"
 gallery:
   - url: /assets/images/dig-screen1.png
     image_path: assets/images/dig-screen1-th.png
