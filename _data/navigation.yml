@@ -13,8 +13,10 @@ docs:
         url: /docs/getting-started/
       - title: "How it works"
         url: /docs/how-it-works/
+  - title: "Under the Hood"
+    children:
       - title: "Adding a new Game"
-        url: /docs/how-it-works/adding-game/
+        url: /support/adding-game/
   - title: Games
     children:
       - title: "Descent 2"
