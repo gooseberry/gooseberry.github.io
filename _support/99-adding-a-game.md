@@ -1,6 +1,6 @@
 ---
 title: "Adding a new game"
-permalink: /docs/how-it-works/adding-game/
+permalink: /docs/support/adding-game/
 toc: false
 toc_label: " On this page"
 toc_icon: "file-alt"
