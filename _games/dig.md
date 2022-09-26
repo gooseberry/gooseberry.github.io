@@ -51,6 +51,6 @@ These instructions work only if you followed the steps outlined in the [Getting 
 The installation script will take a few minutes to complete.  Once the it's done, you can start the game by clicking on the *The Dig* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*.  Have Fun!
 
 # Additional Information
-This game runs on the ScummVM game engine.  Check out the ScummVM section of this site to see how *Smoke* integrates these games into your system. Also have a look at the official ScummVM website to get more information about how this game engine works.
+This game runs on the ScummVM game engine.  Check out the ScummVM section of this site to see how *Smoke* integrates these games with your system. Also have a look at the official ScummVM website to get more information about how this game engine works.
 
 [ScummVM <i class="fas fa-external-link-alt"></i>](https://summvm.org){: .btn .btn--success}
