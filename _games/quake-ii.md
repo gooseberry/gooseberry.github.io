@@ -1,5 +1,5 @@
 ---
-title: "Quake II: Quad Damage"
+title: "Quake II"
 permalink: /games/quake-ii/
 excerpt: "Coming out only 1 year after the original, Quake 2 introduces the concepts of stories and purpose to level designs.  Combined with an amazing adrenaline pumping heavy metal soundtrack composed by Sonic Mayhem, the game pulls you into the center of a war between humanity and the Strogg."
 toc: false
@@ -49,6 +49,6 @@ These instructions work only if you followed the steps outlined in the [Getting 
 The installation script will take a few minutes to complete.  Once the it's done, you can start the game by clicking on the *Quake 2* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*.  Have Fun!
 
 # Additional Information
-This game runs on the Yamagi game engine.  Check out teh official Yamagi Quake website to get more information about how this game engine works.
+This game runs on the Yamagi game engine.  Check out the official Yamagi Quake website to get more information about how this game engine works.
 
  [Yamagi <i class="fas fa-external-link-alt"></i>](https://www.yamagi.org/quake2/){: .btn btn-success}
