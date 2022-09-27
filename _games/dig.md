@@ -5,7 +5,7 @@ excerpt: "The Dig is a brilliant experience that dives us masterfully in a stran
 toc: false
 header:
   overlay_image: /assets/images/dig_header.png
-  teaser: assets/images/dig-teaser.png
+  teaser: assets/images/dig_teaser.png
   actions:
     - label: "Store Page"
       url: "https://gog.com/game/the_dig"
