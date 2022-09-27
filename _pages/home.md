@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/smoke_header.png
+  overlay_image: /assets/images/blank_header.png
 feature_row:
   - image_path:
     alt: "Easy Setup"
