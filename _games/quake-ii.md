@@ -1,10 +1,14 @@
 ---
 title: "Quake II: Quad Damage"
 permalink: /games/quake-ii/
-excerpt: "A first-person shooter video game developed by id Software."
-header:
-  teaser: assets/images/quake2-floppy.png
+excerpt: "Coming out only 1 year after the original, Quake 2 introduces the concepts of stories and purpose to level designs.  Combined with an amazing adrenaline pumping heavy metal soundtrack composed by Sonic Mayhem, the game pulls you into the center of a war between humanity and the Strogg."
 toc: false
+header:
+  overlay_image: /assets/images/quake2_header.png
+  teaser: assets/images/quake2_teaser.png
+  actions:
+    - label: "Store Page"
+      url: "https://gog.com/game/quake_ii_quad_damage"
 gallery:
   - url: /assets/images/quake2-screen1.png
     image_path: assets/images/quake2-screen1-th.png
@@ -21,42 +25,30 @@ gallery:
 
 {% include gallery caption="Screenshots from Quake II on an ASUS Flip C434 running Chrome OS 88 with Crostini." %}
 
-# Game Details
+# Requirements
+If you haven't yet installed smoke, head on over to the [Getting Started](/docs/getting-started/) section.  You'll find instructions on how to get your ChromeOS device ready to install this game.  After you've done that, follow the instructions below to get the game installed.
 
-| Store Page | Setup File | Installer Type | Game Engine |
-|:--|:--|:--|:--|
-|[Quake II <i class="fas fa-external-link-alt"></i>](https://gog.com/game/quake_ii_quad_damage) | setup_quake2_quad_damage_2.0.0.3.exe | Inno Setup | [Yamagi <i class="fas fa-external-link-alt"></i>](https://www.yamagi.org/quake2/) (Open-Source port) |
+# Instructions
 
-# Installation Instructions
-
-## Download the game
-
-1. Go to your [GOG Library](https://www.gog.com/en/account) and select *Quake II*.
-2. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.
-
-![Quake II Download page](/assets/images/quake2-download.png)
-
-If you click on the *Download and Install now* link, it will download the galaxy client installer.  You won't be able to install the game on your Chromebook with this file.
-{: .notice--warning}
-
-## Move the installer to Linux Files
-
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
-
-![Quake II installer files](/assets/images/quake2-files.png)
-
-## Run the Ansible playbook
-
+1. Open the Chrome browser App and go to your [GOG Library](https://www.gog.com/en/account)
+1. Select *Quake 2* from your library to expand the download options.
+1. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.  This will download **setup_quake2_quad_damage_2.0.0.3.exe** to your **Downloads** folder.
+1. Once the download completes, open the **Files** app and browse to the **Downloads** folder.
+1. Drag the installer into the **Linux files** folder to copy it to your **crostini** home directory.
 1. Start the Terminal App.
-2. Change directory to where you downloaded *Smoke* `cd git/smoke`
-3. Run the following command to install the game.
+1. Copy and paste the following two commands onto the terminal to install **Quake 2**.
 
 ~~~bash
-    ansible-playbook -i hosts quake2
+cd ~/git/smoke
+ansible-playbook -i hosts quake2.yml
 ~~~
 
-The installation script will take a few minutes to complete.
+These instructions work only if you followed the steps outlined in the [Getting Started](/_docs/01-getting-started.md) section.  If you cloned the smoke repository into a different location, you will need to run the command from that directory.
+{: .notice}
 
-## Running the Game
+The installation script will take a few minutes to complete.  Once the it's done, you can start the game by clicking on the *Quake 2* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*.  Have Fun!
 
-The installation script creates application icons in the Chrome Launcher.  You can find a shortcut for Quake II, and both the map packs under the *Linux apps* folder in the Launcher.
+# Additional Information
+This game runs on the Yamagi game engine.  Check out teh official Yamagi Quake website to get more information about how this game engine works.
+
+ [Yamagi <i class="fas fa-external-link-alt"></i>](https://www.yamagi.org/quake2/){: .btn btn-success}
