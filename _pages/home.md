@@ -5,6 +5,7 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/blank_header.png
+  caption: "Smoke Effect [Deviant Art XResch](https://www.deviantart.com/xresch/art/22-Normal-Smoke-Brushes-197982419)
 feature_row:
   - image_path:
     alt: "Easy Setup"
