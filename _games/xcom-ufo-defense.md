@@ -1,10 +1,14 @@
 ---
 title: "X-COM UFO Defense"
 permalink: /games/xcom-ufo-defense/
-excerpt: "A science fiction strategy video game developed by Mythos Games and published by MicroProse"
+excerpt: "Turn-based tacticle combat was perfected with X-COM: UFO Defense.  The quality and depth of play in this game is a masterpiece on it's own.  Be prepared to sink hours into this game with a steep learning curve and a rewarding system that keeps players engaged to the very end."
 toc: false
 header:
-  teaser: assets/images/xcom-ufo-defense-floppy.png
+  overlay_image: /assets/images/xcom_ufo_defense_header.png
+  teaser: assets/images/xcom_ufo_defense_teaser.png
+  actions:
+    - label: "Store Page"
+      url: "https://www.gog.com/game/xcom_ufo_defense"
 gallery:
   - url: /assets/images/xcom-ufo-defense-screen1.png
     image_path: assets/images/xcom-ufo-defense-screen1-th.png
@@ -21,42 +25,30 @@ gallery:
 
 {% include gallery caption="Screenshots from the game on an ASUS Flip C434 running Chrome OS 85 with Crostini." %}
 
-# Game Details
+# Requirements
+If you haven't yet installed smoke, head on over to the [Getting Started](/docs/getting-started/) section.  You'll find instructions on how to get your ChromeOS device ready to install this game.  After you've done that, follow the instructions below to get the game installed.
 
-| Store Page | Setup File | Installer Type | Game Engine |
-|:--|:--|:--|:--|
-|[X-COM UFO Defense <i class="fas fa-external-link-alt"></i>](https://www.gog.com/game/xcom_ufo_defense)|  | setup_x-com_ufo_defense_1.2_(28046).exe | Inno Setup | [OpenXcom <i class="fas fa-external-link-alt"></i>](https://openxcom.org/) (Open-Source Port) |
+# Instructions
 
-# Installation Instructions
-
-## Download the game
-
-1. Go to your [GOG Library](https://www.gog.com/en/account) and select *X-COM UFO Defense*.
-2. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.
-
-![X-COM UFO Defense Download Page](/assets/images/xcom-ufo-defense-download.png)
-
-If you click on the *Download and Install now* link, it will download the galaxy client installer. You won’t be able to install the game on your Chromebook with this installer.
-{: .notice--warning}
-
-## Move the installer to Linux Files
-
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
-
-![X-COM UFO Defense Files](/assets/images/xcom-ufo-defense-files.png)
-
-## Run the Ansible playbook
-
+1. Open the Chrome browser App and go to your [GOG Library](https://www.gog.com/en/account)
+1. Select *The Dig* from your library to expand the download options.
+1. Click on the link under *DOWNLOAD OFFLINE BACKUP GAME INSTALLERS*.  This will download **setup_x-com_ufo_defense_1.2_(28046).exe** to your **Downloads** folder.
+1. Once the download completes, open the **Files** app and browse to the **Downloads** folder.
+1. Drag the installer into the **Linux files** folder to copy it to your **crostini** home directory.
 1. Start the Terminal App.
-2. Change directory to where you downloaded *Smoke* `cd git/smoke`
-3. Run the following command to install the game.
+1. Copy and paste the following two commands onto the terminal to install **X-COM: UFO Defense**.
 
 ~~~bash
+cd ~/git/smoke
 ansible-playbook -i hosts xcom_ufo_defense.yml
 ~~~
 
-The installation script will take a few minutes to complete.
+These instructions work only if you followed the steps outlined in the [Getting Started](/_docs/01-getting-started.md) section.  If you cloned the smoke repository into a different location, you will need to run the command from that directory.
+{: .notice}
 
-## Running the Game
+The installation script will take a few minutes to complete.  Once the it's done, you can start the game by clicking on the *OpenXcom* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*.  Have Fun!
 
-Once the installation is complete. You can start the game by clicking on the OpenXcom icon from the Chrome OS Application Launcher. The icon will be located in a group labelled *Linux apps*
+# Additional Information
+This game runs on the OpenXcom game engine.  Check out the OpenXcom section of this site to see how *Smoke* integrates these games with your system. Also have a look at the official OpenXcom website to get more information about how this game engine works.
+
+[OpenXcom <i class="fas fa-external-link-alt"></i>](https://openxcom.org/){: .btn .btn--success}
