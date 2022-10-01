@@ -4,8 +4,8 @@ permalink: /games/quake-ii/
 excerpt: "Coming out only 1 year after the original, Quake 2 introduces the concepts of stories and purpose to level designs.  Combined with an amazing adrenaline pumping heavy metal soundtrack composed by Sonic Mayhem, the game pulls you into the center of a war between humanity and the Strogg."
 toc: false
 header:
-  overlay_image: /assets/images/quake2_header.png
-  teaser: assets/images/quake2_teaser.png
+  overlay_image: /assets/images/quake_2_header.png
+  teaser: assets/images/quake_2_teaser.png
   actions:
     - label: "Store Page"
       url: "https://gog.com/game/quake_ii_quad_damage"
