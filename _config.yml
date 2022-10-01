@@ -36,7 +36,6 @@ include:
   - _pages
   - _docs
   - _games
-  - _support
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -143,21 +142,6 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
-  # _support
-  - scope:
-      path: "_support"
-      type: support
-    values:
-      layout: single
-      classes: wide
-      author_profile: false
-      show_date: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      sidebar:
-        nav: "support"
 
 category_archive:
   type: liquid

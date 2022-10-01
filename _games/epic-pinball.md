@@ -4,8 +4,8 @@ permalink: /games/epic-pinball/
 excerpt: "This game rocks, starting with the awesome music, through the graphics and the great collection of intuitive tables such as the tribute to Epic's first game, Jill of the Jungle, with a table called 'Jungle Pinball'.  They would later develop Extreme Pinball which is a fast paced, surrealistic pinball game."
 toc: false
 header:
-  overlay_image:/assets/images/epic-pinball-header.png
-  teaser: assets/images/epic-pinball-teaser.png
+  overlay_image:/assets/images/epic_pinball_header.png
+  teaser: assets/images/epic_pinball_teaser.png
   actions:
     - label: "GOG.com Store Page"
       url: "https://gog.comg/game/epic_pinball_the_complete_collection"

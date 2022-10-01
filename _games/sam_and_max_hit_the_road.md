@@ -4,8 +4,8 @@ permalink: /games/sam-and-max-hit-the-road/
 excerpt: "A classic point-and-click adventure game with great humour, excellent voice acting, and a beautiful art style.  Sam and Max provide a near endless supply of one-liners and puns each one more crude than the last.  In a collection of adventure games, Sam and Max: Hit the Road fun and funny at an unparalleled level."
 toc: false
 header:
-  overlay_image: /assets/images/samnmax_header.png
-  teaser: assets/images/samnmax_teaser.png
+  overlay_image: /assets/images/sam_max_header.png
+  teaser: assets/images/sam_max_teaser.png
   actions:
     - label: "Store Page"
       url: "https://gog.com/game/sam_max_hit_the_road"
