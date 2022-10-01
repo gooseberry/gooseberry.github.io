@@ -14,12 +14,10 @@ The project sets up an Ansible control node within the Linux Environment of a Ch
 
 ## Features
 
-* Easy to understand modules are written in YAML which means they are human-readable.
-* Ready to run games.  All attempts are made to configure the games to run optimally on your Chromebook, often with modern or tweaked keyboard configurations to get your playing as quickly as possible.
-* Specifically written to support Chromebooks.  There is no plan to support other Linux distros at the moment.
-* Organized in small, single purpose modules to make the modules highly re-useable and simplifies the process of adding new games.
-* Doesn't require additional management software.  Ansible attempts to re-create the known state of a functional game.  It doesn't try to manage a library of games for you or try to link to your online account.
-* Flexible deployment platform.  Any task too complicated for Ansible can be written in a scripting language and run through ansible playbooks.
+* **Ready to run games**.  All attempts are made to configure the games to run optimally on your Chromebook, often with modern or tweaked keyboard configurations to get your playing as quickly as possible.
+* **ChromeOS Support**.  Smoke is designed to run on ChromeOS hardware, bringing support to some much beloved games to your Chromebook.
+* **No Launcher Software**.  Install the game and play the game.  All the supported games will show up in the built-in Chrome App launcher, there is no additional software that tries to manage your library for you.
+* **Optimized Versions**.  When available, a more recent open-source port of the game engine will be installed to replace the old engine for improved user experience.
 
 
 # Getting Started

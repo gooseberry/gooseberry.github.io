@@ -5,7 +5,7 @@ excerpt: "The Dig is a brilliant experience that dives us masterfully in a stran
 toc: false
 header:
   overlay_image: /assets/images/dig_header.png
-  teaser: assets/images/dig-teaser.png
+  teaser: assets/images/dig_teaser.png
   actions:
     - label: "Store Page"
       url: "https://gog.com/game/the_dig"
@@ -26,40 +26,31 @@ gallery:
 This install method was last tested on 2022-09-15 ont Chrome 105.
 {: .notice--info}
 
-# Game Details
+# Requirements
+If you haven't yet installed smoke, head on over to the [Getting Started](/docs/getting-started/) section.  You'll find instructions on how to get your ChromeOS device ready to install this game.  After you've done that, follow the instructions below to get the game installed.
 
-| Store Page | Setup File | Installer Type | Game Engine |
-|:--|:--|:--|:--|
-|[The Dig <i class="fas fa-external-link-alt"></i>](https://gog.com/game/the_dig)| the_dig_en_gog_2_20100.sh | Mojo Setup | [ScummVM <i class="fas fa-external-link-alt"></i>](https://scummvm.org) (Open-Source) |
+# Instructions
 
-# Installation Instructions
-
-## Download the game
-
-1. Go to your [GOG Library](https://www.gog.com/en/account) and select *The Dig*.
-2. Next to the **System** option, select **Linux**.
-3. Click on the link under *DOWNLOAD GAME INSTALLERS*.
-
-![The Dig Download page](/assets/images/dig-download.png)
-
-## Move the installer to Linux Files
-
-After the game installer is downloaded, move it into the **Linux Files** folder so that you can access the file from the terminal.
-
-![The Dig installer files](/assets/images/dig-files.png)
-
-## Run the Ansible playbook
-
+1. Open the Chrome browser App and go to your [GOG Library](https://www.gog.com/en/account)
+1. Select *The Dig* from your library to expand the download options.
+1. Next to the **System** option, select **Linux**.
+1. Click on the link under *DOWNLOAD GAME INSTALLERS*.  This will download **the_dig_en_gog_2_20100.sh** to your **Downloads** folder.
+1. Once the download completes, open the **Files** app and browse to the **Downloads** folder.
+1. Drag the installer into the **Linux files** folder to copy it to your **crostini** home directory.
 1. Start the Terminal App.
-2. Change directory to where you downloaded *Smoke* `cd git/smoke`
-3. Run the following command to install the game.
+1. Copy and paste the following two commands onto the terminal to install **The Dig**.
 
 ~~~bash
+cd ~/git/smoke
 ansible-playbook -i hosts dig.yml
 ~~~
 
-The installation script will take a few minutes to complete.
+These instructions work only if you followed the steps outlined in the [Getting Started](/_docs/01-getting-started.md) section.  If you cloned the smoke repository into a different location, you will need to run the command from that directory.
+{: .notice}
 
-# Running the Game
+The installation script will take a few minutes to complete.  Once the it's done, you can start the game by clicking on the *The Dig* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*.  Have Fun!
 
-Once teh installation is complete, you can start the game by clicking on the *The Dig* from the ChromeOS Application Launcher.  The icon will be located in a group labelled *Linux apps*
+# Additional Information
+This game runs on the ScummVM game engine.  Check out the ScummVM section of this site to see how *Smoke* integrates these games with your system. Also have a look at the official ScummVM website to get more information about how this game engine works.
+
+[ScummVM <i class="fas fa-external-link-alt"></i>](https://summvm.org){: .btn .btn--success}
