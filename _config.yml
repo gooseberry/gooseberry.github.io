@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Instructions and guides to help you set up your Chromebook to run supported games from GOG.com
 twitter_username: username
 github_username: gooseberry
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: default
 search: true
 
 # Build settings
@@ -142,6 +142,7 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
+
 
 category_archive:
   type: liquid
