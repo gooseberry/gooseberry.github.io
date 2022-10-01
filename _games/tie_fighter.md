@@ -4,7 +4,7 @@ permalink: /games/tie-fighter/
 excerpt: "This game rocks, starting with the awesome music, through the graphics and the great collection of intuitive tables such as the tribute to Epic's first game, Jill of the Jungle, with a table called 'Jungle Pinball'.  They would later develop Extreme Pinball which is a fast paced, surrealistic pinball game."
 toc: false
 header:
-  overlay_image:/assets/images/tie_fighter_header.png
+  overlay_image: /assets/images/tie_fighter_header.png
   teaser: assets/images/tie_fighter_teaser.png
   actions:
     - label: "GOG.com Store Page"

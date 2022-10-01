@@ -3,12 +3,7 @@ title: "X-COM UFO Defense"
 permalink: /games/xcom-ufo-defense/
 excerpt: "Turn-based tacticle combat was perfected with X-COM: UFO Defense.  The quality and depth of play in this game is a masterpiece on it's own.  Be prepared to sink hours into this game with a steep learning curve and a rewarding system that keeps players engaged to the very end."
 toc: false
-header:
-  overlay_image: /assets/images/xcom_ufo_defense_header.png
-  teaser: assets/images/xcom_ufo_defense_teaser.png
-  actions:
-    - label: "Store Page"
-      url: "https://www.gog.com/game/xcom_ufo_defense"
+
 gallery:
   - url: /assets/images/xcom-ufo-defense-screen1.png
     image_path: assets/images/xcom-ufo-defense-screen1-th.png
