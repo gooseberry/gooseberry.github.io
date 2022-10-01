@@ -36,7 +36,7 @@ include:
   - _pages
   - _docs
   - _games
-  - _suport
+  - _support
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -157,7 +157,7 @@ defaults:
       share: false
       related: false
       sidebar:
-        nav: "docs"
+        nav: "support"
 
 category_archive:
   type: liquid
